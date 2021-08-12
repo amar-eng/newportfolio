@@ -1,0 +1,66 @@
+@import "../partials/variables";
+.main {
+  //   background-color: red;
+  max-width: 1200px;
+  margin: auto;
+}
+section {
+  background-color: $white-25;
+  border: 1px solid $white-40;
+  min-height: 90vh;
+  border-radius: 30px;
+}
+
+.container {
+  padding: 0 40px;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  //   height: 50vh;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.align-items-center {
+  align-items: center;
+}
+
+// home section
+.home-section {
+  display: flex;
+  padding: 120px 0;
+}
+
+.home-img,
+.home-text {
+  width: 50%;
+  padding: 15px;
+}
+
+.home-img .img-box {
+  max-width: 360px;
+  background-color: $white-25;
+  border-radius: 50%;
+  border: 8px solid $white-25;
+  margin: auto;
+}
+
+.home-img .img-box img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.home-text p {
+  font-size: 28px;
+}
+.home-text h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.home-text h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
