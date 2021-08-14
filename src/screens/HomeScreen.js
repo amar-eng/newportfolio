@@ -11,6 +11,12 @@ const HomeScreen = () => {
               <p>Hello, I'm</p>
               <h1>Amar Mohamud</h1>
               <h2>Front-End Web developer</h2>
+              <a href="#" className="btn">
+                About me
+              </a>
+              <a href="#" className="btn">
+                My Portfolio
+              </a>
             </div>
             <div className="home-img">
               <div className="img-box">
