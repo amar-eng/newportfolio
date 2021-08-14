@@ -3,7 +3,7 @@ import About from "./screens/About";
 function App() {
   return (
     <>
-      <HomeScreen />
+      {/* <HomeScreen /> */}
       <About />
     </>
   );

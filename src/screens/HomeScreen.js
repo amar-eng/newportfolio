@@ -4,7 +4,7 @@ import Me from "../assets/me.jpg";
 const HomeScreen = () => {
   return (
     <div className="main">
-      <section className="home-section align-items-center">
+      <section className="home-section align-items-center ">
         <div className="container">
           <div className="row align-items-center ">
             <div className="home-text">
