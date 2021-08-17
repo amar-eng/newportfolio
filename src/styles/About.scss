@@ -81,8 +81,8 @@
   bottom: 0;
   width: 0%;
   height: 1px;
-  background-color: $darkblue;
-  transition: width 0.3s ease;
+  background-color: $main-color;
+  transition: width 0.5s ease;
 }
 .about-tabs .tab-item:hover::before {
   width: 100%;
@@ -96,7 +96,17 @@
   opacity: 1;
   cursor: auto;
 }
-
+.tab-item {
+  &:hover {
+    color: $main-color;
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+.tab-item ::after {
+  color: $main-color;
+  opacity: 1;
+}
 .about-text .timeline {
   position: relative;
 }
