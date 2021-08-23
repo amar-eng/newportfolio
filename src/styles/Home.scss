@@ -1,8 +1,10 @@
 @import "../partials/variables";
 .main {
   //   background-color: red;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
+  transition: all 0.9s ease-in-out;
+  position: relative;
 }
 section {
   background-color: $white-25;
@@ -18,9 +20,9 @@ section {
 img {
   max-width: 100%;
   vertical-align: middle;
-  //   height: 50vh;
-  width: 350px;
-  height: 350px;
+  // height: 50vh;
+  // width: 350px;
+  // height: 350px;
   object-fit: cover;
 }
 .sec-padding {

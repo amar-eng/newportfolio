@@ -1,0 +1,78 @@
+@import "../partials/variables";
+
+.portfolio-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 200;
+  background: linear-gradient(to bottom right, #efa2b5, #aef1ee);
+}
+.pp-inner {
+  min-height: 100vh;
+  padding: 40px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pp-content {
+  background-color: $white-25;
+  padding: 30px;
+  border-radius: 30px;
+  max-width: 900px;
+  width: 100%;
+  border: 1px solid $white-40;
+  backdrop-filter: $backdrop-blur;
+  opacity: 10;
+  transform: scale(0.9);
+}
+.pp-header {
+  position: relative;
+}
+.pp-header .btn {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -40px;
+  top: -40px;
+}
+.pp-thumbnail img {
+  border-radius: 10px;
+}
+.modal__title {
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 20px 0 15px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+.general-info {
+  ul {
+    li {
+      margin-bottom: 10px;
+      font-weight: 500;
+      text-transform: capitalize;
+      span {
+        font-weight: 300;
+        text-transform: capitalize;
+        color: red;
+      }
+      a {
+        text-transform: lowercase;
+        color: $main-color;
+      }
+    }
+  }
+}
+
+ul {
+  list-style: none;
+}

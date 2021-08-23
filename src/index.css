@@ -26,8 +26,9 @@ body {
   min-height: 100vh;
   background-image: linear-gradient(
     to bottom right,
-    rgb(198, 177, 159),
-    #aef1ee
+    #efa2b5,
+    #aef1ee /* rgb(51, 39, 116),
+    white */
   );
   font-size: 16px;
   color: #05203b;
