@@ -1,0 +1,40 @@
+@import "../partials/variables";
+
+.contact-form {
+  .contact-info {
+    width: 50%;
+    padding: 0 15px;
+  }
+  .input-group {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .input-control::placeholder {
+    color: $darkblue;
+    opacity: 0.8;
+    font-weight: 300;
+  }
+  .input-control {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: $white-25;
+    padding: 0 20px;
+    color: $darkblue;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  .input-control:focus {
+    border-color: $white-40;
+  }
+  textarea.input-control {
+    height: 120px;
+    resize: none;
+    padding-top: 15px;
+  }
+}
