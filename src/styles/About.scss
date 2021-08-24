@@ -161,3 +161,16 @@
 .about-text .btn {
   margin: 0 15px 15px 0;
 }
+.imgg-box .about-pic {
+  // max-width: 360px;
+  // background-color: $white-25;
+  border-radius: 6%;
+  // border: 6px solid $white-25;
+  // margin: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  // height: 50vh;
+  // width: 350px;
+  // height: 350px;
+  object-fit: cover;
+}

@@ -17,14 +17,7 @@ section {
   padding: 0 40px;
   width: 100%;
 }
-img {
-  max-width: 100%;
-  vertical-align: middle;
-  // height: 50vh;
-  // width: 350px;
-  // height: 350px;
-  object-fit: cover;
-}
+
 .sec-padding {
   padding: 80px 0;
 }
@@ -42,7 +35,7 @@ img {
   padding: 120px 0;
 }
 
-.home-img,
+// .home-img,
 .home-text {
   width: 50%;
   padding: 15px;
@@ -50,15 +43,15 @@ img {
 
 .home-img .img-box {
   max-width: 360px;
-  background-color: $white-25;
-  border-radius: 50%;
-  border: 6px solid $white-25;
+  // background-color: $white-25;
+  // border-radius: 50%;
+  // border: 6px solid $white-25;
   margin: auto;
 }
 
 .home-img .img-box img {
-  width: 100%;
-  border-radius: 50%;
+  // width: 100%;
+  // border-radius: 50%;
 }
 
 .home-text p {

@@ -24,7 +24,7 @@ const Modal = ({ block, setSelected, selected }) => {
               <AiOutlineClose className="icon" />
             </button>
             <div className="pp-thumbnail">
-              <img src={block.image} alt="image" />
+              <img src={block.image} alt="image" className="modal-pic" />
             </div>
             <h2 className="modal__title">{block.title}</h2>
           </div>

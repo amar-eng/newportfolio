@@ -1,40 +1,161 @@
 @import "../partials/variables";
 
 .contact-form {
-  .contact-info {
-    width: 50%;
-    padding: 0 15px;
-  }
-  .input-group {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .input-control::placeholder {
+  width: 70%;
+  //   padding: 0 15px;
+  //   padding-left: 10rem;
+}
+.input-group {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.input-control::placeholder {
+  color: $darkblue;
+  opacity: 0.8;
+  font-weight: 300;
+}
+.input-control {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: $white-25;
+  padding: 0 20px;
+  color: $darkblue;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.input-control:focus {
+  border-color: $white-40;
+}
+textarea.input-control {
+  height: 120px;
+  resize: none;
+  padding-top: 15px;
+}
+.contact-info {
+  width: 40%;
+  padding: 0 15px;
+  height: 58vh;
+  //   background-image: linear-gradient(to bottom right, #dcdfb6, #aef1ee);
+}
+
+// .contact__header {
+//   margin: 0rem;
+//   padding: 3rem;
+//   padding-bottom: 1rem;
+//   @include bold;
+//   text-transform: uppercase;
+//   font-size: 2rem;
+//   color: $darkbeige;
+//   text-align: center;
+//   //   background: $offwhite;
+// }
+// .contact-body {
+//   // background: $offwhite;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   width: 100%;
+//   background-image: url("../../assets/pics/open.jpg");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   // padding-bottom: 10rem;
+// }
+
+// Views
+
+.contact {
+  // Mobile
+  height: 100vh;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  //   padding: 10px;
+  height: 100%; //--------------------------------------- height of the big card
+  backdrop-filter: blur(20px);
+  border: 1.5px solid $offwhite;
+  background-image: linear-gradient(to bottom right, #dcdfb6, #aef1ee);
+
+  background: transparent;
+  //   -webkit-box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.75);
+  //   -moz-box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.75);
+  //   box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.75);
+  flex-direction: column;
+  &__info {
+    height: 15vh; //------------------------------ height of the contact info
+
+    flex: 0 1 30%;
+    border-radius: 15px;
+    padding: 40px;
     color: $darkblue;
+    background: $backdrop-blur;
     opacity: 0.8;
-    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    &-header {
+      text-transform: uppercase;
+
+      font-size: 1.2rem; // change this for tablet view
+      //   margin-top: 0;
+      margin: 0 0 1rem 0; // change this for tablet view
+    }
+
+    &-content {
+      font-size: 1rem;
+
+      margin-bottom: 1rem; // ----------------------change this for tablet view
+    }
+    .span-content {
+      font-size: 1rem;
+    }
+
+    .icon-text {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 2rem;
+    }
+
+    .socials {
+      display: flex;
+      // width: 50%; //--------------------------------------change this for tablet and desktop
+
+      justify-content: space-evenly;
+      .icon-circle {
+        flex: 0 1 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        border-radius: 50%;
+
+        transition: 0.3s all ease-in-out;
+        &:hover {
+          background: $ice;
+        }
+      }
+    }
   }
-  .input-control {
-    display: block;
-    width: 100%;
-    height: 50px;
-    border-radius: 25px;
-    border: none;
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 16px;
-    background-color: $white-25;
-    padding: 0 20px;
-    color: $darkblue;
-    border: 1px solid transparent;
-    transition: border-color 0.3s ease;
-  }
-  .input-control:focus {
-    border-color: $white-40;
-  }
-  textarea.input-control {
-    height: 120px;
-    resize: none;
-    padding-top: 15px;
-  }
+}
+
+.contact-flex {
+  display: flex;
+  align-items: flex-start;
+  //   justify-content: space-around;
+  padding: 0 100px;
+}
+.logo-img {
+  max-width: 100%;
+  vertical-align: middle;
+  // height: 50vh;
+  // width: 350px;
+  // height: 350px;
+  object-fit: cover;
 }

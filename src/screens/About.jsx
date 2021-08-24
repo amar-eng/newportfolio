@@ -10,7 +10,7 @@ const About = () => {
   const [isSelected, setIsSelected] = useState("");
 
   return (
-    <div className="main">
+    <div className="main about-body">
       <section className="about-section sec-padding" id="about">
         <div className="container">
           <div className="row">
@@ -21,8 +21,8 @@ const About = () => {
 
           <div className="row">
             <div className="about-img">
-              <div className="img-box">
-                <img src={Me} alt="portfolio-pic" />
+              <div className="imgg-box">
+                <img src={Me} alt="portfolio-pic" className="about-pic" />
               </div>
             </div>
             <div className="about-text">

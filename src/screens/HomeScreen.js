@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/Home.scss";
 import Me from "../assets/me.jpg";
+import logo from "../assets/pics/logo.png";
+import Header from "../components/Header";
 const HomeScreen = () => {
   return (
     <div className="main">
@@ -20,7 +22,7 @@ const HomeScreen = () => {
             </div>
             <div className="home-img">
               <div className="img-box">
-                <img src={Me} alt="portfolio-pic" />
+                <img src={logo} alt="portfolio-pic" />
               </div>
             </div>
           </div>
