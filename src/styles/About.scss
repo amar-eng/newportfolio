@@ -174,3 +174,18 @@
   // height: 350px;
   object-fit: cover;
 }
+.timeline {
+  color: $white;
+  font-size: 1.3em;
+}
+.about-skills {
+  font-size: 2em;
+  font-weight: 500;
+  color: white;
+  &:hover {
+    transition: all 0.5s ease;
+    color: $main-color;
+    opacity: 1;
+    cursor: auto;
+  }
+}

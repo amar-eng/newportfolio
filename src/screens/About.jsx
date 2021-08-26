@@ -10,7 +10,7 @@ const About = () => {
   const [isSelected, setIsSelected] = useState("");
 
   return (
-    <div className="main about-body">
+    <div className="about-body">
       <section className="about-section sec-padding" id="about">
         <div className="container">
           <div className="row">
@@ -29,12 +29,9 @@ const About = () => {
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Excepturi nihil dicta ab placeat similique ipsum, ut est itaque
-                accusamus nesciunt doloribus hic illum suscipit, facilis eaque
-                laborum labore earum blanditiis unde voluptate sit? Placeat
-                voluptatibus odio id provident laboriosam, facere enim, nam
-                voluptates unde magnam in neque nesciunt obcaecati modi.
+                xt obcaecati modi.
               </p>
-              <h3>skills</h3>
+              <h3 className="about-skills">skills</h3>
               <div className="skills">
                 <div className="skill-item">html</div>
                 <div className="skill-item">css</div>
