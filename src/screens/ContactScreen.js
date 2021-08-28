@@ -5,12 +5,14 @@ import { BiPhone } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import logo from "../assets/pics/logo.png";
+import Header from "../components/Header";
 const ContactScreen = () => {
   return (
     <div className="main">
+      <Header />
       <section className="contact-section sec-padding">
         <div className="container">
-          <div className="section-title">
+          <div className="section-title ">
             <h2>Contact Me</h2>
           </div>
         </div>
@@ -67,7 +69,7 @@ const ContactScreen = () => {
                   <BiPhone
                     style={{
                       fontSize: "1.8rem",
-                      color: "#fafafa",
+                      color: "#e02f6b",
                       marginRight: "2rem",
                     }}
                   />
@@ -77,7 +79,7 @@ const ContactScreen = () => {
                   <HiOutlineMail
                     style={{
                       fontSize: "1.8rem",
-                      color: "#fafafa",
+                      color: "#e02f6b",
                       marginRight: "2rem",
                     }}
                   />

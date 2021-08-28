@@ -6,6 +6,7 @@ import Modal from "../screens/Modal";
 import Instock from "../assets/pics/instock.png";
 import prof from "../assets/pics/prof.png";
 import List from "../components/List";
+import Header from "../components/Header";
 
 const PortfolioScreen = () => {
   const [selected, setSelected] = useState(false);
@@ -68,10 +69,11 @@ const PortfolioScreen = () => {
 
   return (
     <div className="main hidden ">
+      <Header />
       <section>
         <div className="container">
           <div className="row">
-            <div className="section-title">
+            <div className="section-title content">
               <h2>Recent Work</h2>
             </div>
           </div>

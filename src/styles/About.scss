@@ -1,6 +1,6 @@
 @import "../partials/variables";
 .section-title {
-  padding: 0 15px;
+  padding: 0px 15px 0 15px;
   width: 100%;
   text-align: center;
   margin-bottom: 40px;
@@ -16,7 +16,7 @@
 
 /* About Section */
 .about-img {
-  width: 40%;
+  width: 35%;
   padding: 0 15px;
 }
 .about-text {
@@ -146,9 +146,10 @@
 }
 .about-text .timeline-item .date {
   display: block;
-  color: $main-color;
+  color: $darkblue;
   font-weight: 400;
   margin: 0 0 10px;
+  color: $main-color;
 }
 .about-text .timeline-item h4 {
   font-size: 18px;
@@ -188,4 +189,13 @@
     opacity: 1;
     cursor: auto;
   }
+}
+
+.date,
+.paragraph,
+h4 {
+  background: $darkblue;
+  opacity: 0.8;
+  color: white;
+  max-width: max-content;
 }

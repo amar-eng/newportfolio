@@ -3,14 +3,15 @@ import { useState } from "react";
 import "../styles/Home.scss";
 import "../styles/About.scss";
 import Me from "../assets/me.jpg";
+import Header from "../components/Header";
 import Work from "../components/Work";
 import Education from "../components/Education";
 const About = () => {
   const [isClicked, setIsClicked] = useState(false);
-  const [isSelected, setIsSelected] = useState("");
 
   return (
-    <div className="about-body">
+    <div className="main">
+      <Header />
       <section className="about-section sec-padding" id="about">
         <div className="container">
           <div className="row">
@@ -44,32 +45,6 @@ const About = () => {
                 <div className="skill-item">c</div>
                 <div className="skill-item">c++</div>
               </div>
-              <div className="about-tabs">
-                <button
-                  type="button"
-                  className="tab-item  "
-                  //   data-target="#education"
-                  onClick={() => setIsClicked(!isClicked)}
-                >
-                  education
-                </button>
-                <button
-                  type="button"
-                  className="tab-item "
-                  //   data-target="#experience"
-                  onClick={() => setIsClicked(!isClicked)}
-                >
-                  experience
-                </button>
-              </div>
-              {isClicked ? <Work /> : <Education />}
-
-              <a href="#" target="_blank" class="btn">
-                download Resume
-              </a>
-              <a href="#" class="btn link-item">
-                contact me
-              </a>
             </div>
           </div>
         </div>
