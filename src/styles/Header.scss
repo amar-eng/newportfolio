@@ -149,7 +149,7 @@
   background-color: $darkblue;
   backdrop-filter: $backdrop-blur;
   //   opacity: ;
-  width: 70%;
+  width: 43%;
   height: 10vh;
   display: flex;
   justify-content: center;
@@ -157,12 +157,12 @@
   top: 5%;
   right: 100%;
   //   transition: 50ms;
-  border-radius: 20px;
+  border-radius: 0 20px 0 20px;
 
   //   margin-top: 20rem;
 }
 .nav-menu.active {
-  right: 5.6%;
+  right: 5.5%;
   transition: 350ms;
 }
 .nav-text {
@@ -170,7 +170,7 @@
   justify-content: center; // might require some changes
   align-items: center;
   // padding: 8px 0 8px 16px;
-  padding: 0.75rem 3rem;
+  padding: 0.75rem 0.5rem;
   list-style: none;
   height: 60px;
   color: $main-color;
