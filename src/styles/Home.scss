@@ -162,8 +162,8 @@ button {
   }
   .row {
     display: flex;
-
     flex-wrap: wrap;
+    align-items: flex-start;
   }
   .align-items-center {
     align-items: center;
@@ -272,30 +272,3 @@ button {
     background-color: $main-color;
   }
 }
-
-// // mobile
-// @include mobile {
-//   .container {
-//     padding: 0;
-//   }
-//   .home-text,
-//   .home-img {
-//     width: 100%;
-//   }
-//   .home-text {
-//     text-align: center;
-//     color: red;
-//   }
-//   .home-img {
-//     order: -1;
-//   }
-//   .home-img .img-box {
-//     max-width: 300px;
-//   }
-//   .home-text .btn {
-//     margin: 0 7px 15px;
-//   }
-//   .portfolio-item {
-//     width: calc(50% - 30px);
-//   }
-// }

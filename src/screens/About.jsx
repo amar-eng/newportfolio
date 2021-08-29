@@ -3,9 +3,19 @@ import { useState } from "react";
 import "../styles/Home.scss";
 import "../styles/About.scss";
 import Me from "../assets/me.jpg";
+import html from "../assets/pics/icons/html.png";
+import css from "../assets/pics/icons/css.png";
+import js from "../assets/pics/icons/js.png";
+import react from "../assets/pics/icons/react.png";
+import git from "../assets/pics/icons/git.png";
+import mongo from "../assets/pics/icons/mongo.png";
+import sass from "../assets/pics/icons/sasss.png";
+import sql from "../assets/pics/icons/sql.png";
+import matlab from "../assets/pics/icons/matlab.png";
+import firebase from "../assets/pics/icons/firebase.png";
+import node from "../assets/pics/icons/node.png";
+import aws from "../assets/pics/icons/aws.png";
 import Header from "../components/Header";
-import Work from "../components/Work";
-import Education from "../components/Education";
 const About = () => {
   const [isClicked, setIsClicked] = useState(false);
 
@@ -27,23 +37,49 @@ const About = () => {
               </div>
             </div>
             <div className="about-text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Excepturi nihil dicta ab placeat similique ipsum, ut est itaque
-                xt obcaecati modi.
+              <p className="about-cont">
+                I enjoy creating things & re-inventing the wheel whether it be
+                programming Javascript applications or finding solutions to real
+                world problems.
               </p>
               <h3 className="about-skills">skills</h3>
               <div className="skills">
-                <div className="skill-item">html</div>
-                <div className="skill-item">css</div>
-                <div className="skill-item">javascript</div>
-                <div className="skill-item">bootstrap</div>
-                <div className="skill-item">php</div>
-                <div className="skill-item">java</div>
-                <div className="skill-item">python</div>
-                <div className="skill-item">wordpress</div>
-                <div className="skill-item">c</div>
-                <div className="skill-item">c++</div>
+                <div className="skill-item">
+                  <img src={html} alt="html" className="skills-img" />
+                </div>
+                <div className="skill-item">
+                  <img src={css} alt="html" className="skills-img" />
+                </div>
+                <div className="skill-item">
+                  <img src={js} alt="html" className="skills-img" />
+                </div>
+                <div className="skill-item">
+                  <img src={react} alt="html" className="skills-img" />
+                </div>
+                <div className="skill-item">
+                  <img src={sass} alt="html" className="skills-img" />
+                </div>
+                <div className="skill-item">
+                  <img src={git} alt="html" className="skills-img" />
+                </div>
+                <div className="skill-item">
+                  <img src={node} alt="html" className="skills-img" />
+                </div>
+                <div className="skill-item">
+                  <img src={firebase} alt="html" className="skills-img fire" />
+                </div>
+                <div className="skill-item">
+                  <img src={mongo} alt="html" className="skills-img" />
+                </div>
+                <div className="skill-item">
+                  <img src={aws} alt="html" className="skills-img" />
+                </div>
+                <div className="skill-item">
+                  <img src={matlab} alt="html" className="skills-img" />
+                </div>
+                <div className="skill-item">
+                  <img src={sql} alt="html" className="skills-img" />
+                </div>
               </div>
             </div>
           </div>

@@ -38,7 +38,7 @@
   }
   .about-text h3 {
     text-transform: capitalize;
-    font-size: 20px;
+    // font-size: 20px;
     margin: 20px 0;
   }
   .about-text .skills {
@@ -48,10 +48,11 @@
   .about-text .skill-item {
     background-color: $white-25;
     border: 1px solid $white-40;
-    padding: 5px 15px;
+    // padding: 5px 15px;
     text-transform: capitalize;
     margin: 0 10px 10px 0;
-    border-radius: 20px;
+    border-radius: 50%;
+    padding: 1rem;
   }
 
   // Tabs
@@ -183,7 +184,8 @@
     font-size: 1.3em;
   }
   .about-skills {
-    font-size: 2em;
+    font-size: 2.5rem;
+    text-align: center;
     font-weight: 500;
     color: white;
     &:hover {
@@ -201,5 +203,27 @@
     opacity: 0.8;
     color: white;
     max-width: max-content;
+  }
+  .about-cont {
+    font-size: 1.5rem;
+  }
+  .about-text {
+    background: $white-25;
+    backdrop-filter: $backdrop-blur;
+    border-radius: 30px;
+    padding: 1rem;
+  }
+  .skills-img {
+    object-fit: contain;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    // width: 50%;
+    // height: 10%;
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0%);
+      transition: 0.5s ease-in;
+    }
   }
 }
