@@ -33,6 +33,7 @@ body {
   background-image: url("./assets/pics/mac1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   font-size: 16px;
   color: #05203b;

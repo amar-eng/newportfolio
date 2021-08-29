@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { init } from "ityped";
 import "../styles/Home.scss";
 import Me from "../assets/me.jpg";
 import logo from "../assets/pics/logo.png";
 import Header from "../components/Header";
 const HomeScreen = () => {
+  // const textRef = useRef();
+  // useEffect(() => {
+  //   init(textRef.current, {
+  //     showCursor: true,
+  //     backDelay: 1000,
+  //     startDelay: 500,
+  //     cursorChar: "|",
+  //     backSpeed: 50,
+  //     typeSpeed: 120,
+  //     strings: ["Web Developer", "Mentor", "Entrepreneur", "Colognoisseur"],
+  //   });
+  // }, []);
   return (
     <div className="main">
       <Header />
@@ -13,7 +26,11 @@ const HomeScreen = () => {
             <div className="home-text">
               <p>Hello, I'm</p>
               <h1>Amar Mohamud</h1>
-              <h2>Front-End Web developer</h2>
+              <h2>Front End Developer</h2>
+              {/* <div className="moving"> */}
+              {/* <h2 ref={textRef}></h2> */}
+              {/* </div> */}
+
               <a href="#" className="btn">
                 About me
               </a>
@@ -23,7 +40,7 @@ const HomeScreen = () => {
             </div>
             <div className="home-img">
               <div className="img-box">
-                <img src={logo} alt="portfolio-pic" />
+                <img src={logo} alt="portfolio-pic" className="img" />
               </div>
             </div>
           </div>

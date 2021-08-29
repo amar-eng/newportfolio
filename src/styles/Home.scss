@@ -1,65 +1,73 @@
 @import "../partials/variables";
+@import "../partials/mixins";
+
+// MOBILE
 .main {
   //   background-color: red;
-  max-width: 1280px;
+  max-width: 375px; // change for tablet view 3
   margin: auto;
   transition: all 0.9s ease-in-out;
   position: relative;
+  // background: red;
 }
+
 section {
   background-color: $white-25;
   border: 1px solid $white-40;
   min-height: 90vh;
+
   border-radius: 30px;
 }
-
-.container {
-  padding: 0 40px;
-  width: 100%;
-}
-
 .sec-padding {
   padding: 80px 0;
 }
+.container {
+  // background: green;
+  padding: 0;
+  width: 100%;
+}
 .row {
+  // background: yellow;
   display: flex;
-
   flex-wrap: wrap;
+  align-items: center;
+  // background: red;
+  // justify-content: center;
 }
 .align-items-center {
   align-items: center;
 }
-
-// home section
 .home-section {
+  // background-color: green;
   display: flex;
-  padding: 120px 0;
+  padding: 20px 0;
 }
-
-// .home-img,
 .home-text {
-  width: 50%;
+  // background-color: blue;
+  text-align: center;
+  width: 100%;
   padding: 15px;
+  // background: brown;
 }
-
 .home-img .img-box {
   max-width: 360px;
-  // background-color: $white-25;
-  // border-radius: 50%;
-  // border: 6px solid $white-25;
   margin: auto;
+  order: -1;
 }
-
-.home-img .img-box img {
-  // width: 100%;
-  // border-radius: 50%;
+.home-img {
+  // background: white;
+  width: 100%;
+  order: -1;
 }
-
+.img {
+  width: 100%;
+  order: -1;
+}
 .home-text p {
   font-size: 28px;
 }
 .home-text h1 {
-  font-size: 50px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 .home-text h2 {
@@ -72,30 +80,31 @@ section {
   margin: 0 15px 15px 0;
 }
 
-// Buttons
 button {
   font-family: inherit;
   user-select: none;
 }
-
 .btn {
   line-height: 1.5;
+  width: 100%;
   background-color: $white-25;
   border: 1px solid $white-40;
-  padding: 10px 28px;
+  padding: 10px 15px;
   display: inline-block;
   border-radius: 30px;
   color: $main-color;
   font-weight: 500;
   text-transform: capitalize;
+  text-align: center;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 21px;
   cursor: pointer;
   user-select: none;
   position: relative;
   overflow: hidden;
   vertical-align: middle;
   transition: color 0.3s ease;
+  // background: blue;
 }
 .btn::before {
   content: "";
@@ -125,3 +134,168 @@ button {
 ::-webkit-scrollbar-thumb {
   background-color: $main-color;
 }
+
+// Desktop
+
+@include desktop {
+  .main {
+    //   background-color: red;
+    max-width: 1280px;
+    margin: auto;
+    transition: all 0.9s ease-in-out;
+    position: relative;
+  }
+  section {
+    background-color: $white-25;
+    border: 1px solid $white-40;
+    min-height: 90vh;
+    border-radius: 30px;
+  }
+
+  .container {
+    padding: 0 40px;
+    width: 100%;
+  }
+
+  .sec-padding {
+    padding: 80px 0;
+  }
+  .row {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  .align-items-center {
+    align-items: center;
+  }
+
+  // home section
+  .home-section {
+    display: flex;
+    padding: 120px 0;
+  }
+
+  // .home-img,
+  .home-text {
+    width: 50%;
+    padding: 15px;
+    text-align: left;
+  }
+
+  .home-img .img-box {
+    max-width: 360px;
+    // background-color: $white-25;
+    // border-radius: 50%;
+    // border: 6px solid $white-25;
+    margin: auto;
+  }
+  .img {
+    order: -1;
+    width: auto;
+    // width: 100%;
+  }
+
+  .home-img {
+    order: 1;
+    max-width: 30%;
+  }
+
+  .home-text p {
+    font-size: 28px;
+  }
+  .home-text h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  .home-text h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+  }
+
+  .home-text .btn {
+    margin: 0 15px 15px 0;
+  }
+
+  // Buttons
+  button {
+    font-family: inherit;
+    user-select: none;
+  }
+
+  .btn {
+    line-height: 1.5;
+    width: auto;
+    background-color: $white-25;
+    border: 1px solid $white-40;
+    padding: 10px 28px;
+    display: inline-block;
+    border-radius: 30px;
+    color: $main-color;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: color 0.3s ease;
+  }
+  .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: $main-color;
+    z-index: -1;
+    transition: width 0.3s ease;
+  }
+  .btn:hover::before {
+    width: 100%;
+  }
+  .btn:hover {
+    color: white;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: $white;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+  }
+}
+
+// // mobile
+// @include mobile {
+//   .container {
+//     padding: 0;
+//   }
+//   .home-text,
+//   .home-img {
+//     width: 100%;
+//   }
+//   .home-text {
+//     text-align: center;
+//     color: red;
+//   }
+//   .home-img {
+//     order: -1;
+//   }
+//   .home-img .img-box {
+//     max-width: 300px;
+//   }
+//   .home-text .btn {
+//     margin: 0 7px 15px;
+//   }
+//   .portfolio-item {
+//     width: calc(50% - 30px);
+//   }
+// }

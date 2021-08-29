@@ -1,201 +1,205 @@
 @import "../partials/variables";
-.section-title {
-  padding: 0px 15px 0 15px;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 40px;
-}
-.section-title h2 {
-  font-size: 40px;
-  text-transform: capitalize;
-}
+@import "../partials/mixins";
 
-.sec-padding {
-  padding: 80px 0;
-}
-
-/* About Section */
-.about-img {
-  width: 35%;
-  padding: 0 15px;
-}
-.about-text {
-  width: 60%;
-  padding: 0 15px;
-}
-.about-img .img-box {
-  background-color: $white-25;
-  max-width: 380px;
-  border: 1px solid $white-40;
-  margin: auto;
-  border-radius: 10px;
-}
-.about-img .img-box img {
-  width: 100%;
-}
-.about-text h3 {
-  text-transform: capitalize;
-  font-size: 20px;
-  margin: 20px 0;
-}
-.about-text .skills {
-  display: flex;
-  flex-wrap: wrap;
-}
-.about-text .skill-item {
-  background-color: $white-25;
-  border: 1px solid $white-40;
-  padding: 5px 15px;
-  text-transform: capitalize;
-  margin: 0 10px 10px 0;
-  border-radius: 20px;
-}
-
-// Tabs
-
-.about-tabs {
-  margin-top: 20px;
-}
-.about-tabs .tab-item {
-  padding: 2px 0;
-  background-color: transparent;
-  border: none;
-  text-transform: capitalize;
-  display: inline-block;
-  color: $darkblue;
-  font-size: 20px;
-  cursor: pointer;
-  font-weight: 500;
-  margin: 0 30px 0 0;
-  position: relative;
-  opacity: 0.5;
-  transition: all 0.3s ease;
-}
-.about-tabs .tab-item:last-child {
-  margin: 0;
-}
-.about-tabs .tab-item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 1px;
-  background-color: $main-color;
-  transition: width 0.5s ease;
-}
-.about-tabs .tab-item:hover::before {
-  width: 100%;
-}
-.about-tabs .tab-item.active::before {
-  width: 100%;
-  background-color: $main-color;
-}
-.about-tabs .tab-item.active {
-  color: $main-color;
-  opacity: 1;
-  cursor: auto;
-}
-.tab-item {
-  &:hover {
-    color: $main-color;
-    opacity: 1;
-    cursor: pointer;
+@include desktop {
+  .section-title {
+    padding: 0px 15px 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
   }
-}
-.tab-item ::after {
-  color: $main-color;
-  opacity: 1;
-}
-.about-text .timeline {
-  position: relative;
-}
-.about-text .timeline::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 1px;
-  top: 0;
-  left: 5px;
-  background-color: $main-color;
-}
-.about-text .tab-content {
-  padding: 40px 0;
-  display: none;
-}
-.about-text .tab-content.active {
-  display: block;
-}
-.about-text .timeline-item {
-  margin-bottom: 30px;
-  position: relative;
-  padding: 10px 0 0 40px;
-}
-.about-text .timeline-item::before {
-  content: "";
-  position: absolute;
-  height: 11px;
-  width: 11px;
-  background-color: $main-color;
-  left: 0;
-  top: 16px;
-  border-radius: 50%;
-}
-.about-text .timeline-item:last-child {
-  margin-bottom: 0;
-}
-.about-text .timeline-item .date {
-  display: block;
-  color: $darkblue;
-  font-weight: 400;
-  margin: 0 0 10px;
-  color: $main-color;
-}
-.about-text .timeline-item h4 {
-  font-size: 18px;
-  text-transform: capitalize;
-  margin: 0 0 10px;
-}
-.about-text .timeline-item h4 span {
-  font-weight: 400;
-}
-.about-text .btn {
-  margin: 0 15px 15px 0;
-}
-.imgg-box .about-pic {
-  // max-width: 360px;
-  // background-color: $white-25;
-  border-radius: 6%;
-  // border: 6px solid $white-25;
-  // margin: auto;
-  max-width: 100%;
-  vertical-align: middle;
-  // height: 50vh;
-  // width: 350px;
-  // height: 350px;
-  object-fit: cover;
-}
-.timeline {
-  color: $white;
-  font-size: 1.3em;
-}
-.about-skills {
-  font-size: 2em;
-  font-weight: 500;
-  color: white;
-  &:hover {
-    transition: all 0.5s ease;
+  .section-title h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+
+  .sec-padding {
+    padding: 80px 0;
+  }
+
+  /* About Section */
+  .about-img {
+    width: 35%;
+    padding: 0 15px;
+  }
+  .about-text {
+    width: 60%;
+    padding: 0 15px;
+  }
+  .about-img .img-box {
+    background-color: $white-25;
+    max-width: 380px;
+    border: 1px solid $white-40;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .about-img .img-box img {
+    width: 100%;
+  }
+  .about-text h3 {
+    text-transform: capitalize;
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .about-text .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-text .skill-item {
+    background-color: $white-25;
+    border: 1px solid $white-40;
+    padding: 5px 15px;
+    text-transform: capitalize;
+    margin: 0 10px 10px 0;
+    border-radius: 20px;
+  }
+
+  // Tabs
+
+  .about-tabs {
+    margin-top: 20px;
+  }
+  .about-tabs .tab-item {
+    padding: 2px 0;
+    background-color: transparent;
+    border: none;
+    text-transform: capitalize;
+    display: inline-block;
+    color: $darkblue;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0 30px 0 0;
+    position: relative;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+  .about-tabs .tab-item:last-child {
+    margin: 0;
+  }
+  .about-tabs .tab-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: $main-color;
+    transition: width 0.5s ease;
+  }
+  .about-tabs .tab-item:hover::before {
+    width: 100%;
+  }
+  .about-tabs .tab-item.active::before {
+    width: 100%;
+    background-color: $main-color;
+  }
+  .about-tabs .tab-item.active {
     color: $main-color;
     opacity: 1;
     cursor: auto;
   }
-}
+  .tab-item {
+    &:hover {
+      color: $main-color;
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  .tab-item ::after {
+    color: $main-color;
+    opacity: 1;
+  }
+  .about-text .timeline {
+    position: relative;
+  }
+  .about-text .timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 5px;
+    background-color: $main-color;
+  }
+  .about-text .tab-content {
+    padding: 40px 0;
+    display: none;
+  }
+  .about-text .tab-content.active {
+    display: block;
+  }
+  .about-text .timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding: 10px 0 0 40px;
+  }
+  .about-text .timeline-item::before {
+    content: "";
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background-color: $main-color;
+    left: 0;
+    top: 16px;
+    border-radius: 50%;
+  }
+  .about-text .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+  .about-text .timeline-item .date {
+    display: block;
+    color: $darkblue;
+    font-weight: 400;
+    margin: 0 0 10px;
+    color: $main-color;
+  }
+  .about-text .timeline-item h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+  }
+  .about-text .timeline-item h4 span {
+    font-weight: 400;
+  }
+  .about-text .btn {
+    margin: 0 15px 15px 0;
+  }
+  .imgg-box .about-pic {
+    // max-width: 360px;
+    // background-color: $white-25;
+    border-radius: 6%;
+    // border: 6px solid $white-25;
+    // margin: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    // height: 50vh;
+    // width: 350px;
+    // height: 350px;
+    object-fit: cover;
+  }
+  .timeline {
+    color: $white;
+    font-size: 1.3em;
+  }
+  .about-skills {
+    font-size: 2em;
+    font-weight: 500;
+    color: white;
+    &:hover {
+      transition: all 0.5s ease;
+      color: $main-color;
+      opacity: 1;
+      cursor: auto;
+    }
+  }
 
-.date,
-.paragraph,
-h4 {
-  background: $darkblue;
-  opacity: 0.8;
-  color: white;
-  max-width: max-content;
+  .date,
+  .paragraph,
+  h4 {
+    background: $darkblue;
+    opacity: 0.8;
+    color: white;
+    max-width: max-content;
+  }
 }
