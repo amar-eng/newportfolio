@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 code {
@@ -30,7 +31,7 @@ body {
     #aef1ee /* rgb(51, 39, 116),
     white */
   );
-  background-image: url("./assets/pics/mac1.jpg");
+  background-image: url("./assets/pics/dream.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -11,7 +11,7 @@ const Work = () => {
             <h4>
               web developer - <span>the webshala</span>
             </h4>
-            <p className="paragraph">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
               molestias, delectus cupiditate cumque commodi adipisci.
             </p>
