@@ -1,22 +1,7 @@
-import React, { useEffect, useRef } from "react";
-import { init } from "ityped";
+import React from "react";
 import Navbar from "../components/Navbar";
-import logo from "../assets/pics/logo.png";
 
-import "./Styles.scss";
-const Homepage = () => {
-  const textRef = useRef();
-  useEffect(() => {
-    init(textRef.current, {
-      showCursor: false,
-      backDelay: 1000,
-      startDelay: 500,
-      cursorChar: "|",
-      backSpeed: 50,
-      typeSpeed: 120,
-      strings: ["Front Developer", "Mentor", "Entrepreneur", "Colognoisseur"],
-    });
-  }, []);
+const Aboutpage = () => {
   return (
     <div className="main">
       <section className="home-sections">
@@ -37,7 +22,7 @@ const Homepage = () => {
             </div>
             <div className="home-image">
               <div className="image-box">
-                <img src={logo} alt="portfolio-pic" className="image" />
+                {/* <img src={logo} alt="portfolio-pic" className="image" /> */}
               </div>
             </div>
           </div>
@@ -47,4 +32,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Aboutpage;

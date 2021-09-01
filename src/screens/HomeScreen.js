@@ -4,6 +4,7 @@ import "../styles/Home.scss";
 import Me from "../assets/me.jpg";
 import logo from "../assets/pics/logo.png";
 import Header from "../components/Header";
+import Navbar from "../components/Navbar";
 const HomeScreen = () => {
   // const textRef = useRef();
   // useEffect(() => {
@@ -19,9 +20,10 @@ const HomeScreen = () => {
   // }, []);
   return (
     <div className="main">
-      <Header />
+      {/* <Header /> */}
+      <Navbar />
       <section className="home-section align-items-center ">
-        <div className="container">
+        <div className="container ">
           <div className="row align-items-center ">
             <div className="home-text">
               <p>Hello, I'm</p>

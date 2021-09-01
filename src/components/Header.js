@@ -26,11 +26,9 @@ const Header = () => {
             className={sidebar ? "nav-menu active" : "nav-menu"}
             onClick={show}
           >
-            <ul className="nav-menu-items">
+            <ul className="nav-menu__items">
               <li className="navbar-toggle">
-                <Link to="#" className="menu-barss">
-                  <AiOutlineClose className="ai" />
-                </Link>
+                <AiOutlineClose className="close" />
                 {SidebarData.map((item, index) => {
                   return (
                     <li key={index} className={item.cName}>
