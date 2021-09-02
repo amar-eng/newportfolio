@@ -11,6 +11,7 @@ import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
 import Aboutpage from "./pages/Aboutpage";
+import Resumepage from "./pages/Resumepage";
 class App extends Component {
   state = {
     loading: true,
@@ -28,6 +29,7 @@ class App extends Component {
         <Switch>
           <Route path="/" exact component={Homepage} />
           <Route path="/about" component={Aboutpage} />
+          <Route path="/resume" component={Resumepage} />
 
           {/* <Route path="/" exact component={HomeScreen} />
           <Route path="/about" component={About} />

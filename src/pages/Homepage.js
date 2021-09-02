@@ -22,7 +22,7 @@ const Homepage = () => {
       <section className="home-sections">
         <div className="container ">
           <Navbar />
-          <div className="roow">
+          <div className="roow home__container">
             <div className="home__text">
               {/* <p>Hi, I'm a</p> */}
               {/* <h1>Amar Mohamud</h1> */}
