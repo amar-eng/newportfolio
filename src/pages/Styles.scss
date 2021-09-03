@@ -576,6 +576,15 @@ button {
     width: 40%;
   }
 }
+.res-button {
+  text-align: center;
+  @include tablet {
+    width: 50%;
+  }
+  @include desktop {
+    width: 40%;
+  }
+}
 
 // ==========================================Contaact
 

@@ -37,10 +37,10 @@ const Resumepage = () => {
               </div>
               {isClicked ? <Work /> : <Education />}
 
-              <a href="#" target="_blank" class="btn res-btn">
+              <a href="#" target="_blank" class="bttn res-button ">
                 download Resume
               </a>
-              <a href="#" class="btn link-item res-btn">
+              <a href="#" class="bttn res-button ">
                 contact me
               </a>
             </div>

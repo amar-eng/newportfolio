@@ -7,33 +7,28 @@ const Work = () => {
       <div className="tab-content active " id="experience">
         <div className="timeline">
           <div className="timeline-item">
-            <span className="date">2013 - 2016</span>
+            <span className="date">Dec 2020 - Present</span>
             <h4>
-              web developer - <span>the webshala</span>
+              Founder/ Full Stack Developer - <span>Colognoisseurs</span>
             </h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-              molestias, delectus cupiditate cumque commodi adipisci.
+              A startup that serves to provide affordable solutions to fragrance
+              enthusiasts. My responsibilities are but not limited to leading a
+              team of developers, designers, and digital marketers to create an
+              application for a subscription based e-commerce buisness by the
+              use of MERN stack and Figma.
             </p>
           </div>
           <div className="timeline-item">
-            <span className="date">2013 - 2016</span>
+            <span className="date">June 2020 - Sept. 2020</span>
             <h4>
-              web developer - <span>the webshala</span>
+              Web Developer - <span>Pronto Shop</span>
             </h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-              molestias, delectus cupiditate cumque commodi adipisci.
-            </p>
-          </div>
-          <div className="timeline-item">
-            <span className="date">2013 - 2016</span>
-            <h4>
-              web developer - <span>the webshala</span>
-            </h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-              molestias, delectus cupiditate cumque commodi adipisci.
+              As a summer intern, I worked in a team mainly responsible for
+              collecting data for the server side logic as well as some of the
+              front end application with the use of HTML, CSS, and some
+              JavaScript.
             </p>
           </div>
         </div>

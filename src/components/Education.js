@@ -7,33 +7,25 @@ const Education = () => {
       <div className="tab-content active " id="education">
         <div className="timeline">
           <div className="timeline-item">
-            <span className="date">2013 - 2016</span>
+            <span className="date">Sept. 2020 - Dec. 2020</span>
             <h4>
-              bachelor of technology - <span>todfod university</span>
+              Diploma - <span>BrainStation</span>
             </h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              ratione expedita veniam dicta autem nobis?
+              Completed the full stack web development bootcamp diploma at
+              BrainStation where I developed skills in Responsive Design,
+              JavaScript and it's Frameworks, and Git.
             </p>
           </div>
           <div className="timeline-item">
-            <span className="date">2013 - 2016</span>
+            <span className="date">2014 - 2020</span>
             <h4>
-              bachelor of technology - <span>todfod university</span>
+              bachelor of Applied Science (B.A.Sc) -{" "}
+              <span>university of regina</span>
             </h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              ratione expedita veniam dicta autem nobis?
-            </p>
-          </div>
-          <div className="timeline-item">
-            <span className="date">2013 - 2016</span>
-            <h4>
-              bachelor of technology - <span>todfod university</span>
-            </h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              ratione expedita veniam dicta autem nobis?
+              A graduate from the University of Regina's Petroleum systems
+              Engineering program with a Minors in Software Engineering.
             </p>
           </div>
         </div>
