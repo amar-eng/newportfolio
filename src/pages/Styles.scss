@@ -65,7 +65,13 @@ section {
   margin: auto;
   transition: all 0.9s ease-in-out;
   position: relative;
-
+  @include tablet {
+    // max-width: 900px;
+    margin: 0 100px;
+  }
+  @include desktop {
+    margin: auto;
+  }
   .container {
     padding: 1.5rem;
     width: 100%;
@@ -135,7 +141,7 @@ section {
   z-index: 100;
   @include tablet {
     max-width: 100%;
-    height: inherit;
+    height: 10vh;
     justify-items: flex-start;
     align-items: center;
     flex-direction: row-reverse;
@@ -143,7 +149,7 @@ section {
   }
   @include desktop {
     max-width: 50%;
-    height: inherit;
+    height: 12vh;
     align-items: center;
     padding: 0 1rem;
     justify-items: flex-start;
@@ -185,9 +191,12 @@ section {
   padding: 1.5rem 0;
   color: $white-25;
   @include tablet {
-    font-size: 24px;
-    margin-left: 2rem;
+    font-size: 16px;
+    margin-left: 1rem;
     align-items: flex-start;
+  }
+  @include desktop {
+    font-size: 24px;
   }
   &:hover {
     text-decoration: underline;
@@ -199,6 +208,10 @@ section {
   margin-bottom: 2rem;
   @include tablet {
     margin-bottom: 0;
+    margin: 0 1rem;
+    font-size: 1rem;
+  }
+  @include desktop {
     margin: 0 3rem;
     font-size: 2rem;
   }
@@ -337,7 +350,7 @@ button {
 
   border-radius: 10px;
   @include tablet {
-    width: 50%;
+    width: 100%;
   }
   @include desktop {
     width: 35%;
@@ -379,7 +392,7 @@ button {
   @include tablet {
     text-align: center;
     width: 100%;
-    padding: 0 5rem;
+    // padding: 0 5rem;
   }
   @include desktop {
     text-align: left;
@@ -405,7 +418,7 @@ button {
   width: 100%;
   @include tablet {
     // width: 70%;
-    padding: 0 4rem;
+    // padding: 0 4rem;
   }
 
   @include desktop {
@@ -421,6 +434,9 @@ button {
   border-radius: 50%;
   background-color: $white-25;
   border: 1px solid $white-40;
+  @include tablet {
+    width: 100%;
+  }
 }
 .skillImg {
   width: 100%;
@@ -1046,5 +1062,44 @@ textarea.inputControl {
   font-size: 2rem;
   @include desktop {
     font-size: 1.5rem;
+  }
+}
+.button-pos {
+  position: fixed;
+  top: 0%;
+  left: 10%;
+  bottom: 15%;
+}
+
+// Clean-up
+
+.title {
+  padding-top: 1rem;
+}
+
+// @include tablet {
+//   .row-about {
+//     border: 2px solid red;
+//   }
+//   .about-text {
+//     background-color: green;
+//     width: 100%;
+//     padding: 0;
+//   }
+//   .about-cont {
+//     background-color: yellow;
+//     padding: 0;
+//   }
+//   .wrapper {
+//     padding: 0;
+//     width: 100%;
+//   }
+//   .skill-container {
+//   }
+// }
+
+.main {
+  @include tablet {
+    max-width: 100%;
   }
 }

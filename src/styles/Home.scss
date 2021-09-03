@@ -2,22 +2,22 @@
 @import "../partials/mixins";
 
 // MOBILE
-.main {
-  //   background-color: red;
-  max-width: 375px; // change for tablet view 3
-  margin: auto;
-  transition: all 0.9s ease-in-out;
-  position: relative;
-  // background: red;
-}
-
-// section {
-//   background-color: $white-25;
-//   border: 1px solid $white-40;
-//   min-height: 90vh;
-
-//   border-radius: 30px;
+// .main {
+//   //   background-color: red;
+//   max-width: 375px; // change for tablet view 3
+//   margin: auto;
+//   transition: all 0.9s ease-in-out;
+//   position: relative;
+//   // background: red;
 // }
+
+section {
+  background-color: $white-25;
+  border: 1px solid $white-40;
+  min-height: 90vh;
+
+  border-radius: 30px;
+}
 .sec-padding {
   padding: 80px 0;
 }

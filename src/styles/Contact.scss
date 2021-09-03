@@ -1,138 +1,138 @@
-@import "../partials/variables";
-@import "../partials/mixins";
+// @import "../partials/variables";
+// @import "../partials/mixins";
 
-@include desktop {
-  .contact-form {
-    width: 70%;
-  }
-  .input-group {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .input-control::placeholder {
-    color: $darkblue;
-    opacity: 0.8;
-    font-weight: 300;
-  }
-  .input-control {
-    display: block;
-    width: 100%;
-    height: 50px;
-    border-radius: 25px;
-    border: none;
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 16px;
-    background-color: $white-25;
-    padding: 0 20px;
-    color: $darkblue;
-    border: 1px solid transparent;
-    transition: border-color 0.3s ease;
-  }
-  .input-control:focus {
-    border-color: $white-40;
-  }
-  textarea.input-control {
-    height: 120px;
-    resize: none;
-    padding-top: 15px;
-  }
-  .contact-info {
-    width: 40%;
-    padding: 0 15px;
-    height: 58vh;
-  }
+// @include desktop {
+//   .contact-form {
+//     width: 70%;
+//   }
+//   .input-group {
+//     width: 100%;
+//     margin-bottom: 30px;
+//   }
+//   .input-control::placeholder {
+//     color: $darkblue;
+//     opacity: 0.8;
+//     font-weight: 300;
+//   }
+//   .input-control {
+//     display: block;
+//     width: 100%;
+//     height: 50px;
+//     border-radius: 25px;
+//     border: none;
+//     font-family: inherit;
+//     font-weight: 400;
+//     font-size: 16px;
+//     background-color: $white-25;
+//     padding: 0 20px;
+//     color: $darkblue;
+//     border: 1px solid transparent;
+//     transition: border-color 0.3s ease;
+//   }
+//   .input-control:focus {
+//     border-color: $white-40;
+//   }
+//   textarea.input-control {
+//     height: 120px;
+//     resize: none;
+//     padding-top: 15px;
+//   }
+//   .contact-info {
+//     width: 40%;
+//     padding: 0 15px;
+//     height: 58vh;
+//   }
 
-  // Views
+//   // Views
 
-  .contact {
-    // Mobile
-    height: 100vh;
-    display: flex;
-    border-radius: 15px;
-    overflow: hidden;
+//   .contact {
+//     // Mobile
+//     height: 100vh;
+//     display: flex;
+//     border-radius: 15px;
+//     overflow: hidden;
 
-    height: 100%; //--------------------------------------- height of the big card
-    backdrop-filter: blur(20px);
-    border: 1.5px solid $offwhite;
-    background-image: linear-gradient(to bottom right, #dcdfb6, #aef1ee);
+//     height: 100%; //--------------------------------------- height of the big card
+//     backdrop-filter: blur(20px);
+//     border: 1.5px solid $offwhite;
+//     background-image: linear-gradient(to bottom right, #dcdfb6, #aef1ee);
 
-    background: transparent;
+//     background: transparent;
 
-    flex-direction: column;
-    &__info {
-      height: 15vh; //------------------------------ height of the contact info
+//     flex-direction: column;
+//     &__info {
+//       height: 15vh; //------------------------------ height of the contact info
 
-      flex: 0 1 30%;
-      border-radius: 15px;
-      padding: 40px;
-      color: $darkblue;
-      background: $backdrop-blur;
-      opacity: 0.8;
-      display: flex;
-      flex-direction: column;
-      &-header {
-        text-transform: uppercase;
+//       flex: 0 1 30%;
+//       border-radius: 15px;
+//       padding: 40px;
+//       color: $darkblue;
+//       background: $backdrop-blur;
+//       opacity: 0.8;
+//       display: flex;
+//       flex-direction: column;
+//       &-header {
+//         text-transform: uppercase;
 
-        font-size: 1.2rem; // change this for tablet view
+//         font-size: 1.2rem; // change this for tablet view
 
-        margin: 0 0 1rem 0; // change this for tablet view
-      }
+//         margin: 0 0 1rem 0; // change this for tablet view
+//       }
 
-      &-content {
-        font-size: 1rem;
+//       &-content {
+//         font-size: 1rem;
 
-        margin-bottom: 1rem; // ----------------------change this for tablet view
-      }
-      .span-content {
-        font-size: 1rem;
-      }
+//         margin-bottom: 1rem; // ----------------------change this for tablet view
+//       }
+//       .span-content {
+//         font-size: 1rem;
+//       }
 
-      .icon-text {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        margin-bottom: 2rem;
-      }
+//       .icon-text {
+//         display: flex;
+//         align-items: center;
+//         justify-content: flex-start;
+//         margin-bottom: 2rem;
+//       }
 
-      .socials {
-        display: flex;
-        // width: 50%; //--------------------------------------change this for tablet and desktop
+//       .socials {
+//         display: flex;
+//         // width: 50%; //--------------------------------------change this for tablet and desktop
 
-        justify-content: space-evenly;
-        .icon-circle {
-          flex: 0 1 50px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 50px;
-          border-radius: 50%;
+//         justify-content: space-evenly;
+//         .icon-circle {
+//           flex: 0 1 50px;
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           height: 50px;
+//           border-radius: 50%;
 
-          transition: 0.3s all ease-in-out;
-          &:hover {
-            background: $ice;
-          }
-        }
-      }
-    }
-  }
+//           transition: 0.3s all ease-in-out;
+//           &:hover {
+//             background: $ice;
+//           }
+//         }
+//       }
+//     }
+//   }
 
-  .contact-flex {
-    display: flex;
-    align-items: flex-start;
-    //   justify-content: space-around;
-    padding: 0 100px;
-  }
-  .logo-img {
-    max-width: 100%;
-    vertical-align: middle;
+//   .contact-flex {
+//     display: flex;
+//     align-items: flex-start;
+//     //   justify-content: space-around;
+//     padding: 0 100px;
+//   }
+//   .logo-img {
+//     max-width: 100%;
+//     vertical-align: middle;
 
-    object-fit: cover;
-  }
-  .contact:hover {
-    background: $white-40;
-  }
-  .icon-text:hover {
-    color: $darkblue;
-  }
-}
+//     object-fit: cover;
+//   }
+//   .contact:hover {
+//     background: $white-40;
+//   }
+//   .icon-text:hover {
+//     color: $darkblue;
+//   }
+// }

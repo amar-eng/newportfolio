@@ -26,7 +26,7 @@ const Aboutpage = () => {
               <h2>about me</h2>
             </div>
           </div>
-          <div className="roow about-row">
+          <div className="roow about-row row-about">
             <div className="about__img">
               <div className="imgg__box">
                 <img src={Me} alt="portfolio-pic" className="about__pic" />
