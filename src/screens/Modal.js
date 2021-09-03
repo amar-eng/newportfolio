@@ -1,23 +1,15 @@
-import React, { useState } from "react";
-import { AiOutlineClose } from "react-icons/ai";
+import React from "react";
+import { AiOutlineClose, AiFillGithub } from "react-icons/ai";
+import { SiSafari } from "react-icons/si";
 
-import pic from "../assets/pics/instock.png";
 import "../styles/Modal.scss";
 import "../pages/Styles.scss";
 const Modal = ({ block, setSelected, selected }) => {
-  console.log(block.title);
-  //   const [blocks, setBlocks] = useState(props);
   return (
-    // <div className="portfolio-popup">
-    //   <div className="pp-inner">
-    //     <div className="pp-content">
-    //       <div className="pp-header">
-    //         <button className="btn pp-close">{/* <IoCloseOutline /> */}</button>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-    <div className="portfolio-popup">
+    <div
+      className="portfolio-popup"
+      // style={{ background: `url(${block.image})` }}
+    >
       <div className="pp-inner">
         <div className="pp-content">
           <div className="pp-header">
@@ -41,12 +33,28 @@ const Modal = ({ block, setSelected, selected }) => {
                 <li>
                   Role - <span>{block.role}</span>
                 </li>
-                <li>
-                  View Online -{" "}
-                  <span>
-                    <a href="#">{block.site}</a>
-                  </span>
-                </li>
+                <div className="modal-icon">
+                  <a className="icon-circles">
+                    <AiFillGithub
+                      style={{
+                        color: "#4078c0",
+                        fontSize: "50px",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => window.open(`${block.git}`)}
+                    />
+                  </a>
+                  <a className="icon-circles">
+                    <SiSafari
+                      style={{
+                        color: "#4078c0",
+                        fontSize: "50px",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => window.open(`${block.site}`)}
+                    />
+                  </a>
+                </div>
               </ul>
             </div>
           </div>

@@ -3,23 +3,46 @@ import Navbar from "../components/Navbar";
 
 import Instock from "../assets/pics/instock.png";
 import prof from "../assets/pics/prof.png";
+import omega from "../assets/pics/omega.png";
+import bestbeats from "../assets/pics/bestbeats.png";
+import studioglam from "../assets/pics/studioglam.png";
 import List from "../components/List";
 import "./Styles.scss";
 const Projectpage = () => {
   const [selected, setSelected] = useState(false);
   const [blocks] = useState([
     {
-      title: "Instock",
+      title: "Omega",
       index: 1,
-      image: Instock,
+      image: omega,
+      paragraph:
+        "A front end focused website that navigates users through Swedish designed German made furniture",
+      tech: "HTML,SaSS,REACT",
+      role: "Front-end",
+      site: "https://omegadesigns.netlify.app/",
+      git: "https://github.com/amar-eng/omeg",
+    },
+    {
+      title: "Studio Glam",
+      index: 2,
+      image: studioglam,
       paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       tech: "HTML,CSS,REACT",
       role: "Front-end",
       site: "www.google.com",
     },
     {
-      title: "Instock2",
-      index: 2,
+      title: "Best Beats",
+      index: 3,
+      image: bestbeats,
+      paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      tech: "HTML,CSS,REACT",
+      role: "Front-end",
+      site: "www.google.com",
+    },
+    {
+      title: "Old Portfolio",
+      index: 4,
       image: prof,
       paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       tech: "HTML,CSS,REACT",
@@ -27,25 +50,7 @@ const Projectpage = () => {
       site: "www.google.com",
     },
     {
-      title: "Instock3",
-      index: 3,
-      image: Instock,
-      paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      tech: "HTML,CSS,REACT",
-      role: "Front-end",
-      site: "www.google.com",
-    },
-    {
-      title: "Instock4",
-      index: 4,
-      image: Instock,
-      paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      tech: "HTML,CSS,REACT",
-      role: "Front-end",
-      site: "www.google.com",
-    },
-    {
-      title: "Instock5",
+      title: "InStock",
       index: 5,
       image: Instock,
       paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -54,7 +59,7 @@ const Projectpage = () => {
       site: "www.google.com",
     },
     {
-      title: "Instock6",
+      title: "Colognoisseur-Concept",
       index: 6,
       image: Instock,
       paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
