@@ -3,6 +3,7 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import pic from "../assets/pics/instock.png";
 import "../styles/Modal.scss";
+import "../pages/Styles.scss";
 const Modal = ({ block, setSelected, selected }) => {
   console.log(block.title);
   //   const [blocks, setBlocks] = useState(props);

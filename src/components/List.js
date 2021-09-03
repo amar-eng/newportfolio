@@ -1,19 +1,23 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/Portfolio.scss";
-import "../styles/Home.scss";
+// import "../styles/Portfolio.scss";
+// import "../styles/Home.scss";
 import Modal from "../screens/Modal";
+import "../pages/Styles.scss";
 const List = ({ block }) => {
   const [selected, setSelected] = useState(false);
   return (
     <>
-      <div className="portfolio-item">
-        <div key={block.index} className="portfolio-item-thumbnail">
-          <img src={block.image} alt="instock" className="port-image" />
+      <div className="portfolio-card">
+        <div
+          key={block.index}
+          className="portfolio-item-thumbnail imgContainer"
+        >
+          <img src={block.image} alt="instock" className="port-image " />
         </div>
-        <h3 className="portfolio-item-title">{block.title}</h3>
+        <h3 className="portfolio-item-title port-title">{block.title}</h3>
         <button
-          className="btn view-project-btn"
+          className="btn projectBtn"
           onClick={() => setSelected(!selected)}
         >
           View Project

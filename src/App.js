@@ -1,41 +1,20 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import HomeScreen from "./screens/HomeScreen";
-import About from "./screens/About";
-import PortfolioScreen from "./screens/PortfolioScreen";
-import ProjectScreen from "./screens/ProjectScreen";
-import ContactScreen from "./screens/ContactScreen";
-import ResumeScreen from "./screens/ResumeScreen";
-import Header from "./components/Header";
-import Loader from "./components/Loader";
-import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
 import Aboutpage from "./pages/Aboutpage";
 import Resumepage from "./pages/Resumepage";
+import Projectpage from "./pages/Projectpage";
+import Contactpage from "./pages/Contactpage";
 class App extends Component {
-  state = {
-    loading: true,
-  };
-  componentDidMount() {
-    setTimeout(() => this.setState({ loading: false }), 2600);
-  }
   render() {
-    // if (this.state.loading) return <Loader />;
-
     return (
       <Router>
-        {/* <Navbar /> */}
-        {/* <Header /> */}
         <Switch>
           <Route path="/" exact component={Homepage} />
           <Route path="/about" component={Aboutpage} />
           <Route path="/resume" component={Resumepage} />
-
-          {/* <Route path="/" exact component={HomeScreen} />
-          <Route path="/about" component={About} />
-          <Route path="/resume" component={ResumeScreen} />
-          <Route path="/portfolio" component={PortfolioScreen} />
-          <Route path="/contact" component={ContactScreen} /> */}
+          <Route path="/portfolio" component={Projectpage} />
+          <Route path="/contact" component={Contactpage} />
         </Switch>
       </Router>
     );
