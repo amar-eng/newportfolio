@@ -17,7 +17,7 @@ const Modal = ({ block, setSelected, selected }) => {
               <AiOutlineClose className="icon" />
             </button>
             <div className="pp-thumbnail">
-              <img src={block.image} alt="image" className="modal-pic" />
+              <img src={block.image} alt="imagemodal" className="modal-pic" />
             </div>
             <h2 className="modal__title">{block.title}</h2>
           </div>
@@ -34,7 +34,7 @@ const Modal = ({ block, setSelected, selected }) => {
                   Role - <span>{block.role}</span>
                 </li>
                 <div className="modal-icon">
-                  <a className="icon-circles">
+                  <div className="icon-circles">
                     <AiFillGithub
                       style={{
                         color: "#4078c0",
@@ -43,8 +43,8 @@ const Modal = ({ block, setSelected, selected }) => {
                       }}
                       onClick={() => window.open(`${block.git}`)}
                     />
-                  </a>
-                  <a className="icon-circles">
+                  </div>
+                  <div className="icon-circles">
                     <SiSafari
                       style={{
                         color: "#4078c0",
@@ -53,7 +53,7 @@ const Modal = ({ block, setSelected, selected }) => {
                       }}
                       onClick={() => window.open(`${block.site}`)}
                     />
-                  </a>
+                  </div>
                 </div>
               </ul>
             </div>

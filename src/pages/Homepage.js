@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import logo from "../assets/pics/logo.png";
 
@@ -16,12 +16,12 @@ const Homepage = () => {
               {/* <h1>Amar Mohamud</h1> */}
 
               <h2>Front End Developer</h2>
-              <a href="#" className="bttn">
+              <Link to="/about" className="bttn">
                 About me
-              </a>
-              <a href="#" className="bttn">
+              </Link>
+              <Link to="/portfolio" className="bttn">
                 My Portfolio
-              </a>
+              </Link>
             </div>
             <div className="home-image">
               <div className="image-box">

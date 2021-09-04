@@ -88,7 +88,7 @@ const Contactpage = () => {
                     </div>
                     <div className="socials">
                       <div className="socials__container">
-                        <a className="icon-circle">
+                        <div className="icon-circle">
                           <AiFillGithub
                             style={{
                               color: "#4078c0",
@@ -99,8 +99,8 @@ const Contactpage = () => {
                               window.open(`https://github.com/amar-eng`)
                             }
                           />
-                        </a>
-                        <a className="icon-circle">
+                        </div>
+                        <div className="icon-circle">
                           <AiFillLinkedin
                             style={{
                               color: " #0e76a8",
@@ -113,7 +113,7 @@ const Contactpage = () => {
                               )
                             }
                           />
-                        </a>
+                        </div>
                       </div>
                       <div className="contact__logo">
                         <img src={logo} alt="my-logo" className="logo__img" />

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 import "./Styles.scss";
+import pdf from "../assets/pdf/Amar.pdf";
 import Work from "../components/Work";
 import Education from "../components/Education";
 const Resumepage = () => {
@@ -37,12 +39,16 @@ const Resumepage = () => {
               </div>
               {isClicked ? <Work /> : <Education />}
 
-              <a href="#" target="_blank" class="bttn res-button ">
+              <button
+                target="_blank"
+                class="bttn res-button "
+                onClick={() => window.open(`${pdf}`)}
+              >
                 download Resume
-              </a>
-              <a href="#" class="bttn res-button ">
+              </button>
+              <Link to="/contact" class="bttn res-button ">
                 contact me
-              </a>
+              </Link>
             </div>
           </div>
         </div>

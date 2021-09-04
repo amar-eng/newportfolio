@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
   const show = () => setSidebar(!sidebar);
-  console.log(SidebarData);
+
   return (
     <>
       <div className="nav-container" onClick={show}>

@@ -10,7 +10,7 @@ import colog from "../assets/pics/colog.png";
 import List from "../components/List";
 import "./Styles.scss";
 const Projectpage = () => {
-  const [selected, setSelected] = useState(false);
+  // const [selected, setSelected] = useState(false);
   const [blocks] = useState([
     {
       title: "Omega",
