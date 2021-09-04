@@ -7,7 +7,7 @@ const Work = () => {
       <div className="tab-content active " id="experience">
         <div className="timeline">
           <div className="timeline-item">
-            <span className="date">Dec 2020 - Present</span>
+            <span className="date">March 2021 - Present</span>
             <h4>
               Founder/ Full Stack Developer - <span>Colognoisseurs</span>
             </h4>
