@@ -322,12 +322,14 @@ button {
   background-color: $main-color;
   z-index: -1;
   transition: width 0.3s ease;
+  border-radius: 30px;
 }
 .bttn:hover::before {
   width: 100%;
 }
 .bttn:hover {
   color: white;
+  border-radius: 30px;
 }
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
