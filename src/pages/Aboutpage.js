@@ -35,9 +35,9 @@ const Aboutpage = () => {
             <div className="about-text">
               <p className="about-cont">
                 I enjoy creating things & re-inventing the wheel whether it be
-                programming Javascript applications or finding solutions to real
-                world problems. Below are some of the skills I've acquired along
-                the way.
+                programming Javascript applications or finding solutions to
+                real-world problems. Below are some of the skills I’ve acquired
+                along the way.
               </p>
 
               <div className="wrapper">
