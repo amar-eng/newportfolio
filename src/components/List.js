@@ -10,6 +10,8 @@ const List = ({ block }) => {
         <div
           key={block.index}
           className="portfolio-item-thumbnail imgContainer"
+          onClick={() => setSelected(!selected)}
+          style={{ cursor: "pointer" }}
         >
           <img src={block.image} alt="instock" className="port-image " />
         </div>

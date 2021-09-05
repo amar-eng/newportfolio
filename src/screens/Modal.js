@@ -28,10 +28,10 @@ const Modal = ({ block, setSelected, selected }) => {
             <div className="general-info">
               <ul>
                 <li>
-                  technologies used - <span>{block.tech}</span>
+                  technologies used : <span>{block.tech}</span>
                 </li>
                 <li>
-                  Role - <span>{block.role}</span>
+                  Role : <span>{block.role}</span>
                 </li>
                 <div className="modal-icon">
                   <div className="icon-circles">
