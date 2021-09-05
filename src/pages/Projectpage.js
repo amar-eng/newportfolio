@@ -28,8 +28,8 @@ const Projectpage = () => {
       index: 2,
       image: studioglam,
       paragraph:
-        "A full stack MERN e-commerce website that is built with React-Redux. From the Admin product management to a simple checkout processes, this is an easy-to-use application developed for the customer's perpective and the owner of the e-commerce buisness.",
-      tech: "React, Redux, Mongo DB, Express JS, Node Js, React-Bootstrap, and JWT authentication ",
+        "A full stack MERN e-commerce website that is built with React-Redux. From the Admin product management to a simple checkout processes, this is an easy-to-use application developed for the customer's perpective and the owner of the e-commerce buisness with JWT Authentication!",
+      tech: "React, Redux, Mongo DB,Express JS, Node JS, and Bootstrap ",
       role: "Full Stack",
       site: "http://studioglam.herokuapp.com/",
       git: "https://github.com/amar-eng/StudioGlam-beta",
