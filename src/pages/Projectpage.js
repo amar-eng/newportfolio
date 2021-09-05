@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-
 import Instock from "../assets/pics/instock.png";
 import prof from "../assets/pics/prof.png";
 import omega from "../assets/pics/omega.png";
@@ -17,8 +16,8 @@ const Projectpage = () => {
       index: 1,
       image: omega,
       paragraph:
-        "A front end focused website that navigates users through Swedish designed German made furniture. This application features animation concepts as well as a modern minimalist theme.",
-      tech: "HTML, SaSS,REACT",
+        "A front-end-focused website that navigates users through Swedish-designed German-made furniture. This application features animation concepts as well as a modern minimalist theme. ",
+      tech: "HTML, Sass, React",
       role: "Front-end",
       site: "https://omegadesigns.netlify.app/",
       git: "https://github.com/amar-eng/omeg",
@@ -28,9 +27,9 @@ const Projectpage = () => {
       index: 2,
       image: studioglam,
       paragraph:
-        "A full stack MERN e-commerce website that is built with React-Redux. From the Admin product management to a simple checkout processes, this is an easy-to-use application developed for the customer's perpective and the owner of the e-commerce buisness with JWT Authentication!",
-      tech: "React, Redux, Mongo DB,Express JS, Node JS, and Bootstrap ",
-      role: "Full Stack",
+        " A Full-stack MERN easy-to-use e-commerce application developed for the admin product management system as well as a simple checkout process for the customer. It was built with the use of React-Redux, React-Bootstrap, and JWT Authentication!",
+      tech: "React, Redux, Mongo DB, Express JS, & Node JS ",
+      role: "Full-Stack",
       site: "http://studioglam.herokuapp.com/",
       git: "https://github.com/amar-eng/StudioGlam-beta",
     },
@@ -39,8 +38,8 @@ const Projectpage = () => {
       index: 3,
       image: bestbeats,
       paragraph:
-        "A fully responsive front end focused application that is a one page e-commerce concept website. This application features animations and a sleek design that is built using JavaScript techniques.",
-      tech: "HTML, CSS,and JS",
+        "A fully responsive front-end application that is a one-page e-commerce concept website. This application features animations and a sleek design that is built using JavaScript techniques.",
+      tech: "HTML, CSS & JS",
       role: "Front-end",
       site: "https://bestbeatsnow.netlify.app/",
       git: "https://github.com/amar-eng/Headphones",
@@ -50,8 +49,8 @@ const Projectpage = () => {
       index: 4,
       image: prof,
       paragraph:
-        "My old portfolio that showcased some of my earlier-days skills. This application uses concepts such as react-scroll , styled-components, and ityped. Take a look and rate my progression!",
-      tech: "HTML, SaSS, and React",
+        "My old portfolio that showcased some of my earlier-day skills. This application uses concepts such as react-scroll , styled-components, and ityped. Take a look at my progression!",
+      tech: "HTML, Sass & React",
       role: "Front-end",
       site: "https://amar-mo.com/",
       git: "https://github.com/amar-eng/my-portfolio",
@@ -61,8 +60,8 @@ const Projectpage = () => {
       index: 5,
       image: Instock,
       paragraph:
-        "This was a team-oriented project that used the Agile Methodology to create an Invetory application. The Inventory tracking system was developed using React and NodeJS to allow users to input, edit, and delete information.",
-      tech: "HTML, SASS, React, Express Js, and Jira",
+        "This was a team-oriented project that used an Agile Methodology to create an Inventory application. The Inventory tracking system was developed using React and NodeJS to allow users to input, edit, and delete information.",
+      tech: "HTML, Sass, React, Express Js & Jira",
       role: "Full Stack",
       site: "https://instock.herokuapp.com/",
       git: "https://github.com/amar-eng/Instock",
@@ -72,8 +71,8 @@ const Projectpage = () => {
       index: 6,
       image: colog,
       paragraph:
-        "I love all things colognes! My first project was to turn my hobby to an interactive un-deployed web application that allows users to get scent information. This was developed by using React and Sass for the front-end as well expressJS and Firebase for the back-end and user authentication",
-      tech: "HTML,SaSS,React, Express JS, Firebase",
+        "I love all things cologne! My first project was to turn my hobby to an interactive un-deployed web application that allows users to get scent information. This was developed by using React and Sass for the front-end as well ExpressJS and Firebase for the back-end and user authentication",
+      tech: "HTML, Sass, React, ExpressJS, Firebase",
       role: "Full Stack",
       site: "https://github.com/amar-eng/Colognoisseurs",
       git: "https://github.com/amar-eng/Colognoisseurs",

@@ -25,7 +25,7 @@ const Work = () => {
               Web Developer - <span>Pronto Shop</span>
             </h4>
             <p>
-              As a summer intern, I worked in a team mainly responsible for
+              As a summer intern, I worked with a team mainly responsible for
               collecting data for the server side logic as well as some of the
               front end application with the use of HTML, CSS, and some
               JavaScript.

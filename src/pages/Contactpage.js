@@ -48,8 +48,8 @@ const Contactpage = () => {
                       className="inputControl"
                     ></textarea>
                   </div>
-                  <div class="submit-btn submit__btn">
-                    <button type="submit" className="bttn contact-btn buttons">
+                  <div class="submit__btn">
+                    <button type="submit" className=" bttn">
                       send message
                     </button>
                   </div>

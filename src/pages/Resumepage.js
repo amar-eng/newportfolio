@@ -44,7 +44,7 @@ const Resumepage = () => {
                 class="bttn res-button "
                 onClick={() => window.open(`${pdf}`)}
               >
-                download Resume
+                View full Resume
               </button>
               <Link to="/contact" class="bttn res-button ">
                 contact me
