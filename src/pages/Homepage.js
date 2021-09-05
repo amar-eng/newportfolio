@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { init } from "ityped";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import logo from "../assets/pics/logo.png";
@@ -6,6 +7,23 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 import "./Styles.scss";
 const Homepage = () => {
+  const textRef = useRef();
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: false,
+      backDelay: 1000,
+      startDelay: 500,
+      cursorChar: "|",
+      backSpeed: 50,
+      typeSpeed: 120,
+      strings: [
+        "Front-End Developer",
+        "Mentor",
+        "Entrepreneur",
+        "Colognoisseur",
+      ],
+    });
+  }, []);
   return (
     <div className="main">
       <section className="home-sections">
@@ -16,7 +34,8 @@ const Homepage = () => {
               {/* <p>Hi, I'm a</p> */}
               {/* <h1>Amar Mohamud</h1> */}
 
-              <h2>Front End Developer</h2>
+              {/* <h2>Front End Developer</h2> */}
+              <h2 ref={textRef} style={{ height: "5vh" }}></h2>
               <div className="home-socials">
                 <div className="home-icons">
                   <AiFillGithub
