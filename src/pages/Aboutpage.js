@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Me from "../assets/me.jpg";
+import Me from "../assets/me2.PNG";
 import html from "../assets/pics/icons/html.png";
 import css from "../assets/pics/icons/css.png";
 import js from "../assets/pics/icons/js.png";

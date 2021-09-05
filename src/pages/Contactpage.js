@@ -49,7 +49,7 @@ const Contactpage = () => {
                     ></textarea>
                   </div>
                   <div class="submit-btn submit__btn">
-                    <button type="submit" className="btn contact-btn buttons">
+                    <button type="submit" className="bttn contact-btn buttons">
                       send message
                     </button>
                   </div>

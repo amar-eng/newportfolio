@@ -15,7 +15,7 @@ const List = ({ block }) => {
         </div>
         <h3 className="portfolio-item-title port-title">{block.title}</h3>
         <button
-          className="btn projectBtn"
+          className="bttn projectBtn"
           onClick={() => setSelected(!selected)}
         >
           View Project

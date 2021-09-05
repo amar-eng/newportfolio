@@ -21,9 +21,11 @@ const Navbar = () => {
 
             {SidebarData.map((item, index) => {
               return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>{item.title}</Link>
-                </li>
+                <Link to={item.path}>
+                  <li key={index} className={item.cName}>
+                    {item.title}
+                  </li>
+                </Link>
               );
             })}
           </li>

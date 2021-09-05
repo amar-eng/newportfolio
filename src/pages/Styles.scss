@@ -141,6 +141,7 @@ section {
   right: -200%;
   transition: 850ms;
   z-index: 100;
+
   @include tablet {
     max-width: 100%;
     height: 10vh;
@@ -181,6 +182,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   @include tablet {
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -190,7 +192,7 @@ section {
   }
 }
 .nav__text {
-  font-size: 34px;
+  font-size: 24px;
   padding: 1.5rem 0;
   color: $white-25;
   @include tablet {
@@ -202,12 +204,17 @@ section {
     font-size: 24px;
   }
   &:hover {
-    text-decoration: underline;
+    // text-decoration: underline;
+    border-bottom: 1px solid $white-40;
+
+    @include tablet {
+      padding: 0.85px 0;
+    }
   }
 }
 .close {
   color: $white-25;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
   @include tablet {
     margin-bottom: 0;
@@ -281,7 +288,7 @@ button {
 
 .bttn {
   line-height: 1.5;
-  width: 90%;
+  width: 100%;
   background-color: $white-25;
   border: 1px solid $white-40;
   padding: 10px 28px;
@@ -309,28 +316,32 @@ button {
   @include desktop {
     width: 40%;
     margin: 0.5rem;
-    margin-top: 2.5rem;
+    // margin-top: 2.5rem;
   }
 }
-.bttn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 0%;
-  background-color: $main-color;
-  z-index: -1;
-  transition: width 0.3s ease;
-  border-radius: 30px;
+
+@include tablet {
+  .bttn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: $main-color;
+    z-index: -1;
+    transition: width 0.3s ease;
+    border-radius: 30px;
+  }
+  .bttn:hover::before {
+    width: 100%;
+  }
+  .bttn:hover {
+    color: white;
+    border-radius: 30px;
+  }
 }
-.bttn:hover::before {
-  width: 100%;
-}
-.bttn:hover {
-  color: white;
-  border-radius: 30px;
-}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
@@ -342,6 +353,37 @@ button {
   background-color: $main-color;
 }
 
+.home-socials {
+  // background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 1rem 0;
+}
+.home-icons {
+  // background-color: yellow;
+  width: 30%;
+  height: 30%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  // padding: 0.2rem 0;
+  font-size: 3rem;
+  &:hover {
+    background-color: $ice;
+    border-radius: 30px;
+  }
+  @include tablet {
+    width: 25%;
+    font-size: 3rem;
+  }
+  @include desktop {
+    width: 20%;
+    font-size: 2.5rem;
+  }
+}
 // ----------------------------- About page
 
 .title {
@@ -365,7 +407,7 @@ button {
 .imgg__box {
   border-radius: 10px;
   position: relative;
-  height: auto;
+  height: 75vh;
   padding: 1rem;
   @include desktop {
     padding: 0;
@@ -435,7 +477,7 @@ button {
 
   width: 100%;
   position: relative;
-  height: 115px;
+  height: 120px;
   border-radius: 50%;
   background-color: $white-25;
   border: 1px solid $white-40;
@@ -449,11 +491,14 @@ button {
   //   background-color: red;
   padding: 1rem;
   object-fit: contain;
-  filter: grayscale(100%);
+
   cursor: pointer;
-  &:hover {
-    filter: grayscale(10%);
-    transition: 0.8s ease-in;
+  @include tablet {
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(10%);
+      transition: 0.8s ease-in;
+    }
   }
 }
 
