@@ -71,7 +71,7 @@ const Projectpage = () => {
       index: 6,
       image: colog,
       paragraph:
-        "I love all things cologne! My first project was to turn my hobby to an interactive un-deployed web application that allows users to get scent information. This was developed by using React and Sass for the front-end as well ExpressJS and Firebase for the back-end and user authentication",
+        "I love all things cologne! My first project was to turn my hobby into an interactive un-deployed web application that allows users to get scent information. This was developed by using React and Sass for the front-end as well ExpressJS and Firebase for the back-end and user authentication.",
       tech: "HTML, Sass, React, ExpressJS, Firebase",
       role: "Full Stack",
       site: "https://github.com/amar-eng/Colognoisseurs",
