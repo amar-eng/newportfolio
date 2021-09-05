@@ -67,7 +67,7 @@ const Projectpage = () => {
       git: "https://github.com/amar-eng/Instock",
     },
     {
-      title: "Colognoisseur-Concept",
+      title: "Colognoisseur",
       index: 6,
       image: colog,
       paragraph:

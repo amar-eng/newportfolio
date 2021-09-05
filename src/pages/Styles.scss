@@ -1043,6 +1043,23 @@ textarea.inputControl {
     justify-content: space-around;
   }
 }
+
+.submit__btn {
+  @include tablet {
+    // background-color: yellow;
+  }
+}
+.contact-bttn {
+  @include tablet {
+    // background-color: red;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+  }
+  @include desktop {
+    width: 50%;
+  }
+}
 // ======================================== Portfolio
 
 .portfolio-section {
@@ -1181,12 +1198,14 @@ textarea.inputControl {
   height: 5rem;
   // padding: 0 8rem;
   justify-content: space-between;
-  width: 100%;
+  width: 60%;
   @include tablet {
-    padding: 0 15rem;
+    // padding: 0 15rem;
+    width: 30%;
   }
   @include desktop {
-    padding: 0 3rem;
+    // padding: 0 3rem;
+    width: 40%;
   }
 }
 
@@ -1206,11 +1225,16 @@ textarea.inputControl {
   max-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0rem;
   overflow: hidden;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+  }
   @include desktop {
     margin: 0 0 0 5rem;
+    flex-direction: column;
   }
 }
 .description {

@@ -33,29 +33,29 @@ const Modal = ({ block, setSelected, selected }) => {
                 <li>
                   Role : <span>{block.role}</span>
                 </li>
-                <div className="modal-icon">
-                  <div className="icon-circles">
-                    <AiFillGithub
-                      style={{
-                        color: "#4078c0",
-                        fontSize: "50px",
-                        cursor: "pointer",
-                      }}
-                      onClick={() => window.open(`${block.git}`)}
-                    />
-                  </div>
-                  <div className="icon-circles">
-                    <SiSafari
-                      style={{
-                        color: "#4078c0",
-                        fontSize: "50px",
-                        cursor: "pointer",
-                      }}
-                      onClick={() => window.open(`${block.site}`)}
-                    />
-                  </div>
-                </div>
               </ul>
+              <div className="modal-icon">
+                <div className="icon-circles">
+                  <AiFillGithub
+                    style={{
+                      color: "#4078c0",
+                      fontSize: "50px",
+                      cursor: "pointer",
+                    }}
+                    onClick={() => window.open(`${block.git}`)}
+                  />
+                </div>
+                <div className="icon-circles">
+                  <SiSafari
+                    style={{
+                      color: "#4078c0",
+                      fontSize: "50px",
+                      cursor: "pointer",
+                    }}
+                    onClick={() => window.open(`${block.site}`)}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
