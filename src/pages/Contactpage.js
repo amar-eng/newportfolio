@@ -1,5 +1,5 @@
-import React from "react";
-import emailjs from "emailjs";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import Navbar from "../components/Navbar";
 import { BiPhone } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
@@ -8,6 +8,8 @@ import logo from "../assets/pics/logo.png";
 import "./Styles.scss";
 
 const Contactpage = () => {
+  const [clicked, setClicked] = useState(false);
+
   function sendEmail(e) {
     e.preventDefault();
 
@@ -26,6 +28,7 @@ const Contactpage = () => {
           console.log(error.text);
         }
       );
+    e.target.reset();
   }
   return (
     <div className="main">
@@ -39,12 +42,18 @@ const Contactpage = () => {
           </div>
           <div className="contact-flex">
             <div className="  contact-row">
+              {clicked && (
+                <div className="mes">
+                  {" "}
+                  Thanks for inquiring! I will reach back to you soon.
+                </div>
+              )}
               <form onSubmit={sendEmail}>
                 <div className="form-container">
                   <div className="input__group">
                     <input
                       type="text"
-                      name="name"
+                      name="user_name"
                       placeholder="Name"
                       className="inputControl"
                     />
@@ -52,7 +61,7 @@ const Contactpage = () => {
                   <div className="input__group">
                     <input
                       type="text"
-                      name="email"
+                      name="user_email"
                       placeholder="Email"
                       className="inputControl"
                     />
@@ -72,7 +81,7 @@ const Contactpage = () => {
                       className="inputControl"
                     ></textarea>
                   </div>
-                  <div class="submit__btn">
+                  <div class="submit__btn" onClick={() => setClicked(!clicked)}>
                     <button type="submit" className=" bttn contact-bttn">
                       send message
                     </button>

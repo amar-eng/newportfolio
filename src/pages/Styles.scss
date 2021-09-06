@@ -1242,3 +1242,15 @@ textarea.inputControl {
     width: 50%;
   }
 }
+
+.mes {
+  background-color: rgb(113, 187, 113);
+  padding: 1rem 0;
+  // margin-bottom: 2rem;
+  border-radius: 30px;
+  text-align: center;
+  width: 100%;
+  @include desktop {
+    width: 90%;
+  }
+}
