@@ -27,7 +27,7 @@ const Projectpage = () => {
       index: 2,
       image: studioglam,
       paragraph:
-        " A Full-stack MERN easy-to-use e-commerce application developed for the admin product management system as well as a simple checkout process for the customer. It was built with the use of React-Redux, React-Bootstrap, and JWT Authentication!",
+        " A Full-stack MERN easy-to-use e-commerce application developed for the admin product management as well as a simple checkout process for the customer. It was built with the use of React-Redux, React-Bootstrap, and JWT Authentication!",
       tech: "React, Redux, Mongo DB, Express JS, & Node JS ",
       role: "Full-Stack",
       site: "http://studioglam.herokuapp.com/",
