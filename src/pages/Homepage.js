@@ -35,7 +35,9 @@ const Homepage = () => {
               {/* <h1>Amar Mohamud</h1> */}
 
               {/* <h2>Front End Developer</h2> */}
-              <h2 ref={textRef} style={{ height: "5vh" }}></h2>
+              <h2 ref={textRef} style={{ height: "5vh" }}>
+                {" "}
+              </h2>
               <div className="home-socials">
                 <div className="home-icons">
                   <AiFillGithub
