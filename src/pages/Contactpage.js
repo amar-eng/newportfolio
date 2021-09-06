@@ -1,4 +1,5 @@
 import React from "react";
+import emailjs from "emailjs";
 import Navbar from "../components/Navbar";
 import { BiPhone } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
@@ -7,6 +8,25 @@ import logo from "../assets/pics/logo.png";
 import "./Styles.scss";
 
 const Contactpage = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_93iuxid",
+        "template_wyensrw",
+        e.target,
+        "user_tpKvmxKUkq2uGaUHZcIWk"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
   return (
     <div className="main">
       <section className="home-sections">
@@ -19,11 +39,12 @@ const Contactpage = () => {
           </div>
           <div className="contact-flex">
             <div className="  contact-row">
-              <form>
+              <form onSubmit={sendEmail}>
                 <div className="form-container">
                   <div className="input__group">
                     <input
                       type="text"
+                      name="name"
                       placeholder="Name"
                       className="inputControl"
                     />
@@ -31,6 +52,7 @@ const Contactpage = () => {
                   <div className="input__group">
                     <input
                       type="text"
+                      name="email"
                       placeholder="Email"
                       className="inputControl"
                     />
@@ -38,12 +60,14 @@ const Contactpage = () => {
                   <div className="input__group">
                     <input
                       type="text"
+                      name="subject"
                       placeholder="Subject"
                       className="inputControl"
                     />
                   </div>
                   <div class="input__group">
                     <textarea
+                      name="message"
                       placeholder="Message"
                       className="inputControl"
                     ></textarea>
