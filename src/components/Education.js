@@ -14,7 +14,7 @@ const Education = () => {
             <p>
               Completed the full stack web development bootcamp diploma at
               BrainStation where I developed skills in Responsive Design,
-              JavaScript and it's Frameworks, and Git.
+              JavaScript and its Frameworks, and Git.
             </p>
           </div>
           <div className="timeline-item">
