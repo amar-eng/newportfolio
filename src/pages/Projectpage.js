@@ -60,7 +60,7 @@ const Projectpage = () => {
       index: 5,
       image: Instock,
       paragraph:
-        "This was a team-oriented project that used an Agile Methodology to create an Inventory application. The Inventory tracking system was developed using React and NodeJS to allow users to input, edit, and delete information.",
+        "This was a team-oriented project that used an Agile Methodology to create an CRUD Inventory application. The Inventory tracking system was developed using React and NodeJS to allow users to input, edit, and delete information.",
       tech: "HTML, Sass, React, Express Js & Jira",
       role: "Full Stack",
       site: "https://instock.herokuapp.com/",
