@@ -81,8 +81,12 @@ const Contactpage = () => {
                       className="inputControl"
                     ></textarea>
                   </div>
-                  <div class="submit__btn" onClick={() => setClicked(!clicked)}>
-                    <button type="submit" className=" bttn contact-bttn">
+                  <div class="submit__btn">
+                    <button
+                      type="submit"
+                      className=" bttn contact-bttn"
+                      onClick={() => setClicked(!clicked)}
+                    >
                       send message
                     </button>
                   </div>
