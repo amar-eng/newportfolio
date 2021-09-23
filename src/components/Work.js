@@ -9,7 +9,7 @@ const Work = () => {
           <div className="timeline-item">
             <span className="date">March 2021 - Present</span>
             <h4>
-              Founder/ Full Stack Developer - <span>Colognoisseurs</span>
+              Full Stack Developer - <span>Colognoisseurs</span>
             </h4>
             <p>
               A startup that serves to provide affordable solutions to fragrance
