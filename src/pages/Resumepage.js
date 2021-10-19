@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import "./Styles.scss";
-import pdf from "../assets/pdf/Amar_Resume.pdf";
+import pdf from "../assets/pdf/Amar__Resume.pdf";
 import Work from "../components/Work";
 import Education from "../components/Education";
 const Resumepage = () => {
