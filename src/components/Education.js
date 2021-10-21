@@ -24,8 +24,8 @@ const Education = () => {
               <span>university of regina</span>
             </h4>
             <p>
-              A graduate from the University of Regina's Petroleum systems
-              Engineering program with a Minors in Software Engineering.
+              A graduate from the University of Regina's Software Systems
+              Engineering program.
             </p>
           </div>
         </div>
