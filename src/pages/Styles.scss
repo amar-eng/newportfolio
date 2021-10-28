@@ -10,7 +10,7 @@ body {
     #aef1ee /* rgb(51, 39, 116),
     white */
   );
-  background-image: url("../assets/pics/coffee.jpg");
+  background-image: url("../assets/pics/inspo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,9 +21,9 @@ body {
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
   padding: 5vh 15px;
-  @include desktop {
-    background-image: url("../assets/pics/inspo.jpg");
-  }
+  // @include desktop {
+  //   background-image: url("../assets/pics/inspo.jpg");
+  // }
 }
 body::before {
   content: "";
