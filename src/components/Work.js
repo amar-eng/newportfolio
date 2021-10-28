@@ -13,10 +13,10 @@ const Work = () => {
             </h4>
             <p>
               A startup that serves to provide affordable solutions to fragrance
-              enthusiasts. My responsibilities are but not limited to leading a
-              team of developers, designers, and digital marketers to create an
-              application for a subscription based e-commerce buisness by the
-              use of MERN stack and Figma.
+              enthusiasts. My responsibilities are but not limited to working
+              with a team of developers, designers, and digital marketers to
+              create an application for a subscription based e-commerce buisness
+              by the use of MERN stack and Figma.
             </p>
           </div>
           <div className="timeline-item">
