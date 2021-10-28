@@ -6,10 +6,7 @@ import "../styles/Modal.scss";
 import "../pages/Styles.scss";
 const Modal = ({ block, setSelected, selected }) => {
   return (
-    <div
-      className="portfolio-popup"
-      // style={{ background: `url(${block.image})` }}
-    >
+    <div className="portfolio-popup">
       <div className="pp-inner">
         <div className="pp-content">
           <div className="pp-header">
@@ -33,6 +30,7 @@ const Modal = ({ block, setSelected, selected }) => {
                 <li>
                   Role : <span>{block.role}</span>
                 </li>
+                <li>Click the links below to view the project </li>
               </ul>
               <div className="modal-icon">
                 <div className="icon-circles">

@@ -23,7 +23,6 @@ const Resumepage = () => {
                 <button
                   type="button"
                   className="tab-item  "
-                  //   data-target="#education"
                   onClick={() => setIsClicked(!isClicked)}
                 >
                   education
@@ -31,7 +30,6 @@ const Resumepage = () => {
                 <button
                   type="button"
                   className="tab-item "
-                  //   data-target="#experience"
                   onClick={() => setIsClicked(!isClicked)}
                 >
                   experience

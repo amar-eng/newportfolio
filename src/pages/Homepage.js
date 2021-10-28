@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import logo from "../assets/pics/logo.png";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-
 import "./Styles.scss";
 const Homepage = () => {
   const textRef = useRef();
@@ -31,10 +30,6 @@ const Homepage = () => {
           <Navbar />
           <div className="roow home__container">
             <div className="home__text">
-              {/* <p>Hi, I'm a</p> */}
-              {/* <h1>Amar Mohamud</h1> */}
-
-              {/* <h2>Front End Developer</h2> */}
               <h2 ref={textRef} style={{ height: "5vh" }}>
                 {" "}
               </h2>

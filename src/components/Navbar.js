@@ -16,19 +16,17 @@ const Navbar = () => {
       </div>
       <nav className={sidebar ? "menu active" : "menu"} onClick={show}>
         <ul className="menu__items">
-          <li className="menu__toggle">
+          <div className="menu__toggle">
             <AiOutlineClose className="close" />
 
-            {SidebarData.map((item, index) => {
+            {SidebarData.map((item) => {
               return (
-                <Link to={item.path}>
-                  <li key={index} className={item.cName}>
-                    {item.title}
-                  </li>
+                <Link to={item.path} key={item.id}>
+                  <li className={item.cName}>{item.title}</li>
                 </Link>
               );
             })}
-          </li>
+          </div>
         </ul>
       </nav>
     </>
