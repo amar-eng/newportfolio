@@ -41,10 +41,21 @@ const Aboutpage = () => {
               </p>
 
               <div className="wrapper">
-                <div className="skill-container">
-                  <img src={html} alt="html" className="skillImg" />
-                </div>
-                <div className="skill-container">
+                {/* <div className="skill-container"> */}
+                <img src={html} alt="html" className="skillImg" />
+                <img src={css} alt="html" className="skillImg" />
+                <img src={js} alt="html" className="skillImg" />
+                <img src={react} alt="html" className="skillImg" />
+                <img src={sass} alt="html" className="skillImg" />
+                <img src={git} alt="html" className="skillImg" />
+                <img src={node} alt="html" className="skillImg" />
+                <img src={fire} alt="html" className="skillImg fire" />
+                <img src={mongo} alt="html" className="skillImg" />
+                <img src={aws} alt="html" className="skillImg" />
+                <img src={matlab} alt="html" className="skillImg" />
+                <img src={sql} alt="html" className="skillImg" />
+                {/* </div> */}
+                {/* <div className="skill-container">
                   <img src={css} alt="html" className="skillImg" />
                 </div>
                 <div className="skill-container">
@@ -76,7 +87,7 @@ const Aboutpage = () => {
                 </div>
                 <div className="skill-container">
                   <img src={sql} alt="html" className="skillImg" />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
