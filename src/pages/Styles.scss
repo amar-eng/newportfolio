@@ -1271,3 +1271,65 @@ textarea.inputControl {
 //   height: auto;
 //   width: 100%;
 // }
+
+// image box
+.about-text {
+  // background-color: red;
+  // width: 100%;
+  // padding: 0;
+}
+.wrapper {
+  // background-color: green;
+  width: 100%;
+  height: 100%;
+  // border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-rows: 1fr 1fr;
+  // grid-template-areas:
+  //   "image-box image-box"
+  //   "image-box image-box";
+  @include tablet {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "image-box image-box"
+      "image-box image-box";
+  }
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    // grid-template-areas: ;
+    grid-template-areas:
+      "image-box image-box"
+      "image-box image-box";
+  }
+}
+.skillImg {
+  // background-color: red;
+  // width: 100%;
+  padding: 0;
+}
+.skill-container {
+  height: 90px;
+  @include tablet {
+    height: 120px;
+    padding: 1.5rem;
+  }
+  @include desktop {
+    height: 100px;
+    padding: 0.85rem;
+  }
+}
+.about-text {
+  width: 700px;
+
+  // padding: 10rem 0;
+  @include desktop {
+    // height: 75vh;
+  }
+}
+.about-cont {
+  text-align: center;
+  @include desktop {
+    padding: 0 0 5rem 0;
+  }
+}
