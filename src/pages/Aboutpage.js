@@ -13,6 +13,7 @@ import matlab from "../assets/pics/icons/matlab.png";
 import fire from "../assets/pics/icons/fire.png";
 import node from "../assets/pics/icons/node.png";
 import aws from "../assets/pics/icons/aws.png";
+
 import "./Styles.scss";
 
 const Aboutpage = () => {
@@ -41,10 +42,10 @@ const Aboutpage = () => {
                 understanding its inner workings. I was even more so intrigued
                 by the internet and how it works so a career in web development
                 being my calling isn’t hard to conceptualize because its not
-                only something Im good at but something I love! In the Resume
-                section of my portfolio you will see my educational background
-                but till then please explore down below some of the skills I’ve
-                acquired along the way.
+                only something Im good at but something I love! On my Resume you
+                will see my educational background but till then please explore
+                down below some of the skills I’ve acquired along the way and
+                view some of the projects Ive worked on.
               </p>
 
               <div className="wrapper">

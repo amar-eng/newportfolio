@@ -154,7 +154,7 @@ section {
     padding: 0 1rem;
   }
   @include desktop {
-    max-width: 50%;
+    width: 30%;
     height: 12vh;
     align-items: center;
     padding: 0 1rem;
@@ -176,6 +176,9 @@ section {
     align-items: center;
     justify-content: space-between;
     // background: red;
+  }
+  @include desktop {
+    width: 100%;
   }
 }
 .menu__toggle {
@@ -204,6 +207,7 @@ section {
   }
   @include desktop {
     font-size: 24px;
+    margin-left: 2rem;
   }
   &:hover {
     // text-decoration: underline;
@@ -1122,13 +1126,16 @@ textarea.inputControl {
     border-bottom: none;
   }
   @include desktop {
-    width: 30%;
+    width: 40%;
   }
 }
 
 .projectBtn {
   width: 80%;
   font-size: 1.2rem;
+  @include desktop {
+    width: 40%;
+  }
 }
 .port-title {
   padding: 1rem;
@@ -1332,4 +1339,12 @@ textarea.inputControl {
   @include desktop {
     padding: 0 0 5rem 0;
   }
+}
+.pp-close {
+  border-radius: 50%;
+  border: none;
+  padding: 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  // font-size: 20px;
 }

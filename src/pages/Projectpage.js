@@ -43,17 +43,17 @@ const Projectpage = () => {
       site: "https://bestbeatsnow.netlify.app/",
       git: "https://github.com/amar-eng/Headphones",
     },
-    {
-      title: "Old Portfolio",
-      index: 4,
-      image: prof,
-      paragraph:
-        "My old portfolio that showcased some of my earlier-day skills. This application uses concepts such as react-scroll , styled-components, and ityped. Take a look at my progression!",
-      tech: "HTML, Sass & React",
-      role: "Front-end",
-      site: "https://amar-mo.com/",
-      git: "https://github.com/amar-eng/my-portfolio",
-    },
+    // {
+    //   title: "Old Portfolio",
+    //   index: 4,
+    //   image: prof,
+    //   paragraph:
+    //     "My old portfolio that showcased some of my earlier-day skills. This application uses concepts such as react-scroll , styled-components, and ityped. Take a look at my progression!",
+    //   tech: "HTML, Sass & React",
+    //   role: "Front-end",
+    //   site: "https://amar-mo.com/",
+    //   git: "https://github.com/amar-eng/my-portfolio",
+    // },
     {
       title: "InStock",
       index: 5,
@@ -65,17 +65,17 @@ const Projectpage = () => {
       site: "https://instock.herokuapp.com/",
       git: "https://github.com/amar-eng/Instock",
     },
-    {
-      title: "Cologne Experts",
-      index: 6,
-      image: colog,
-      paragraph:
-        "I love all things cologne! My first project was to turn my hobby into an interactive un-deployed web application that allows users to get scent information. This was developed by using React and Sass for the front-end as well ExpressJS and Firebase for the back-end and user authentication.",
-      tech: "HTML, Sass, React, ExpressJS, Firebase",
-      role: "Full Stack",
-      site: "https://github.com/amar-eng/Colognoisseurs",
-      git: "https://github.com/amar-eng/Colognoisseurs",
-    },
+    // {
+    //   title: "Cologne Experts",
+    //   index: 6,
+    //   image: colog,
+    //   paragraph:
+    //     "I love all things cologne! My first project was to turn my hobby into an interactive un-deployed web application that allows users to get scent information. This was developed by using React and Sass for the front-end as well ExpressJS and Firebase for the back-end and user authentication.",
+    //   tech: "HTML, Sass, React, ExpressJS, Firebase",
+    //   role: "Full Stack",
+    //   site: "https://github.com/amar-eng/Colognoisseurs",
+    //   git: "https://github.com/amar-eng/Colognoisseurs",
+    // },
   ]);
 
   return (

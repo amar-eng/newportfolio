@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import logo from "../assets/pics/logo.png";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import "./Styles.scss";
+import pdf from "../assets/pdf/Amar-Resume.pdf";
 const Homepage = () => {
   const textRef = useRef();
   useEffect(() => {
@@ -60,8 +61,12 @@ const Homepage = () => {
               <Link to="/about" className="bttn">
                 About me
               </Link>
-              <Link to="/portfolio" className="bttn">
-                My Portfolio
+              <Link
+                to="/"
+                className="bttn"
+                onClick={() => window.open(`${pdf}`)}
+              >
+                My Resume
               </Link>
             </div>
             <div className="home-image">

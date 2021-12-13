@@ -11,20 +11,15 @@ export const SidebarData = [
     path: "/about",
     cName: "nav__text",
   },
+  ,
   {
     id: 3,
-    title: "Resume",
-    path: "/resume",
-    cName: "nav__text",
-  },
-  {
-    id: 4,
     title: "Projects",
     path: "/portfolio",
     cName: "nav__text",
   },
   {
-    id: 5,
+    id: 4,
     title: "Contact",
     path: "/contact",
     cName: "nav__text",
