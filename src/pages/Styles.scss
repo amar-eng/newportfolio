@@ -461,6 +461,18 @@ button {
   width: 100%;
   @include desktop {
     width: 50%;
+    text-align: left;
+  }
+}
+.about-title {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  @include tablet {
+    font-size: 3.5rem;
+  }
+  @include desktop {
+    font-size: 4rem;
   }
 }
 
@@ -485,7 +497,8 @@ button {
   height: 120px;
   border-radius: 50%;
   background-color: $white-25;
-  border: 1px solid $white-40;
+  background-color: transparent;
+  // border: 1px solid $white-40;
   @include tablet {
     width: 100%;
   }
@@ -497,13 +510,13 @@ button {
   padding: 1rem;
   object-fit: contain;
   cursor: pointer;
-  @include tablet {
-    filter: grayscale(100%);
-    &:hover {
-      filter: grayscale(10%);
-      transition: 0.8s ease-in;
-    }
-  }
+  // @include tablet {
+  //   filter: grayscale(100%);
+  //   &:hover {
+  //     filter: grayscale(10%);
+  //     transition: 0.8s ease-in;
+  //   }
+  // }
 }
 
 // ---------------RESUME
@@ -1332,10 +1345,11 @@ textarea.inputControl {
   // padding: 10rem 0;
   @include desktop {
     // height: 75vh;
+    text-align: left;
   }
 }
 .about-cont {
-  text-align: center;
+  // text-align: center;
   @include desktop {
     padding: 0 0 5rem 0;
   }

@@ -34,18 +34,16 @@ const Aboutpage = () => {
               </div>
             </div>
             <div className="about-text">
+              <h1 className="about-title"> Hello! I'm Amar</h1>
               <p className="about-cont">
-                Hi there! My name is Amar Mohamud and I am a technology
-                enthusiast at heart pursuing a profession in Web Development by
-                utilizing my record of providing innovative technical solutions.
-                Ever since I got my first computer, I was obsessed with
-                understanding its inner workings. I was even more so intrigued
-                by the internet and how it works so a career in web development
-                being my calling isn’t hard to conceptualize because its not
-                only something Im good at but something I love! On my Resume you
-                will see my educational background but till then please explore
-                down below some of the skills I’ve acquired along the way and
-                view some of the projects Ive worked on.
+                I am a technology enthusiast at heart pursuing a profession in
+                Web Development. Ever since I got my first computer, I was
+                obsessed with understanding its inner workings. I was even more
+                so intrigued by the internet and how it works so a career in web
+                development was my calling! On my Resume you will see my
+                educational background but till then please explore down below
+                some of the skills I’ve acquired along the way and view some of
+                the projects Ive worked on.
               </p>
 
               <div className="wrapper">
