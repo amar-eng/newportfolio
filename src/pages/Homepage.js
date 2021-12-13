@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import logo from "../assets/pics/logo.png";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import "./Styles.scss";
-import pdf from "../assets/pdf/Amar-Resume.pdf";
+import pdf from "../assets/pdf/Amar-Web.pdf";
 const Homepage = () => {
   const textRef = useRef();
   useEffect(() => {

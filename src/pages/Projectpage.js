@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Instock from "../assets/pics/instock.png";
-import prof from "../assets/pics/prof.png";
+
 import omega from "../assets/pics/omega.png";
 import bestbeats from "../assets/pics/bestbeats.png";
 import studioglam from "../assets/pics/studioglam.png";
-import colog from "../assets/pics/colog.png";
+
 import List from "../components/List";
 import "./Styles.scss";
 const Projectpage = () => {

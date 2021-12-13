@@ -11,7 +11,7 @@ export const SidebarData = [
     path: "/about",
     cName: "nav__text",
   },
-  ,
+
   {
     id: 3,
     title: "Projects",
