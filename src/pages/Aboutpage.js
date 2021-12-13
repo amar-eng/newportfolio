@@ -42,8 +42,7 @@ const Aboutpage = () => {
                 so intrigued by the internet and how it works so a career in web
                 development was my calling! On my Resume you will see my
                 educational background but till then please explore down below
-                some of the skills I’ve acquired along the way and view some of
-                the projects Ive worked on.
+                some of the skills I’ve acquired along the way.
               </p>
 
               <div className="wrapper">
