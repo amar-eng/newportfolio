@@ -34,7 +34,7 @@ const Aboutpage = () => {
               </div>
             </div>
             <div className="about-text">
-              <h1 className="about-title"> Hello! I'm Amar</h1>
+              <h1 className="about-title"> Hi! I'm Amar</h1>
               <p className="about-cont">
                 I am a technology enthusiast at heart pursuing a profession in
                 Web Development. Ever since I got my first computer, I was
